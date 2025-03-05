@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Portal.master.cs" Inherits="Nutrovet.Portal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title><%: Page.Title %>Nutrologia Veterinária - NutroVET</title>
+    <link href="<%=ResolveClientUrl("~/CSS/bootstrap.css")%>" rel="stylesheet" />
+
+    <link href="<%=ResolveClientUrl("~/CSS/font-awesome/css/all.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/rotatingcard/pe-icon-7-stroke.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/rotatingcard/rotating-card.css")%>" rel="stylesheet" />    
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")%>" rel="stylesheet" />
+    <!-- Toastr style -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/toastr/toastr.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/animate.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/portal/style_pAssinatura.css")%>" rel="stylesheet" />
+    <!-- Gritter -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/gritter/jquery.gritter.css")%>" rel="stylesheet" />
+    <!-- Switchery -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/switchery/switchery.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/datapicker/bootstrap-datepicker.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/touchspin/jquery.bootstrap-touchspin.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/slick/slick.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/slick/slick-theme.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/datatables/datatables.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/iziModal/iziModal.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/Imagens/favicon.ico")%>" rel="shortcut icon" type="image/x-icon" />
+    <!-- Mainly scripts -->
+    <script src="<%=ResolveClientUrl("~/Scripts/jquery-3.3.1.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/bootstrap.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/moment.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/datatables/datatables.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.tooltip.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.spline.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.resize.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.pie.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/peity/jquery.peity.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/switchery/switchery.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/demo/peity-demo.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/inspinia.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/pace/pace.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/jquery-ui/jquery-ui.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/gritter/jquery.gritter.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/sparkline/jquery.sparkline.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/demo/sparkline-demo.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/chartJs/Chart.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/toastr/toastr.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/toastr/ToastScript.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/justgage/raphael-min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/slick/slick.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/iziModal/iziModal.min.js")%>" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" crossorigin="anonymous"></script>
+    <!-- Mainly scripts -->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <header id="header">
+                <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">O <strong>NutroVET</strong> é um sistema on-line desenvolvido para o suporte dos profissionais que trabalham com alimentação natural de cães e gatos. É uma ferramenta que vai lhe auxiliar na elaboração de dietas e na prescrição de nutracêuticos, se tornando uma peça fundamental no seu trabalho.</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <img src="../Imagens/logo-m.png" alt="logo" onclick="location.href='https://www.nutrovet.com.br'" />
+                            <strong>NutroVET - Nutrologia Veterinária Inteligente </strong>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a data-toggle="collapse" data-target=".in" href="https://www.nutrovet.com.br"><i class="fa fa-home"></i>&nbsp;Início</a></li>
+                                <li><a data-toggle="collapse" data-target=".in" href="EscolherAssinatura.aspx"><i class="fas fa-handshake"></i>&nbsp;Planos</a></li>
+                                <li><a data-toggle="collapse" data-target=".in" href="../Login.aspx"><i class="fa fa-door-closed"></i>&nbsp;Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="page-wrapper" class="gray-bg dashboard-1">
+                <!-- page content -->
+                <div class="" role="main">
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- /page content -->
+            </div>
+            <div class="pagina-footer navbar-fixed-bottom" role="banner">
+                <div class="container">
+                    <div class="pull-left">
+                        |&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCPk1NVPuAgVPjf6eQOI5qeg?view_as=public" target="_blank"><i class="fab fa-youtube"></i></a>&nbsp;
+                |&nbsp;&nbsp;<a href="https://www.facebook.com/nutrovetonline/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>&nbsp;
+                |&nbsp;<a href="https://www.instagram.com/nutrovetonline/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>&nbsp;|
+                    </div>
+                    <div class="pull-right">
+                        NutroVET by <strong>RD Sistemas &copy;<asp:Label ID="lblAno" runat="server" Text=""></asp:Label></strong>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Tag Manager (noscript) -->
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPQDXWC"
+                    height="0" width="0" style="display: none; visibility: hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </div>
+    </form>
+</body>
+</html>

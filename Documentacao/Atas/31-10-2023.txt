@@ -1,0 +1,41 @@
+Ata Reunião RD Sistemas 31/10/2023
+
+1) Integração Nutrovet;
+	- Fazer campanha para convencimento dos veterinários para cadastro do CPF.
+	- Integração com App, somente se tiver o CPF do Tutor. Se não tiver, não integra.
+
+2) Monetizar o aplicativo
+	- Marketing de planos para o App
+
+3) Portal
+	- Transformar o Portal do Nutrovet em Blog de notícias
+
+4) Investimento recursos Nutrovet com outras coisas
+	- Servidor Banco
+	- Servidor aplicação
+	- Desenvolvedor(es)
+	- Registro.BR
+	- SSL
+	- Marketing
+
+5) Integração empresas
+	- Contrato app
+	- Contrato Nutrovet
+
+6) Tratar com o Iedo sobre migração das contas Pagar.Me. Vamos ter que manter a 1.0 e juntamente com a 2.0 até migra todos os planos;
+
+7) Versão 4.0
+	- Front: WebForm
+	- Back: C#
+	- WebService
+
+6) Aplicativo
+	- Front: WEB
+	- Back: C#
+	- WebService
+
+7) Suporte
+	- ChatBot no App
+	- Verificar o uso do ChatGPT
+	- Incluir no app
+	- Implementar

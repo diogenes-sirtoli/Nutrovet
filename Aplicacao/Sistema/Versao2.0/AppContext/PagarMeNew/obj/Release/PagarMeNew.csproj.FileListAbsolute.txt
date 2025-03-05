@@ -1,0 +1,43 @@
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\PagarMeNew.dll.config
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\PagarMeNew.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\PagarMeNew.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Newtonsoft.Json.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\PagarmeCoreApi.PCL.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\System.Net.Http.Extensions.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\System.Net.Http.Primitives.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\Newtonsoft.Json.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\System.Net.Http.Extensions.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\bin\System.Net.Http.Primitives.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.App.config
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.CoreCompileInputs.cache
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.CopyComplete
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\obj\Release\PagarMeNew.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeNew\obj\Release\PagarMeNew.pdb
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\PagarMeNew.dll.config
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\PagarMeNew.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\PagarMeNew.pdb
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Newtonsoft.Json.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\PagarmeCoreApi.PCL.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\System.Net.Http.Extensions.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\System.Net.Http.Primitives.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\Newtonsoft.Json.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\System.Net.Http.Extensions.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\bin\System.Net.Http.Primitives.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.App.config
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.AssemblyReference.cache
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.CoreCompileInputs.cache
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.csproj.CopyComplete
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeNew\obj\Release\PagarMeNew.pdb

@@ -1,0 +1,54 @@
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PagarMeOld.dll.config
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PagarMeOld.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PagarMeOld.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\BouncyCastle.Crypto.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\Funcoes.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\Newtonsoft.Json.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PagarMe.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PhoneNumbers.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Buffers.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Collections.Immutable.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Memory.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Numerics.Vectors.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\AjaxControlToolkit.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\MaskEdit.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\BouncyCastle.Crypto.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\Funcoes.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\Newtonsoft.Json.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\PhoneNumbers.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Buffers.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Collections.Immutable.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Memory.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Numerics.Vectors.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\obj\Release\PagarMeOld.csproj.CoreCompileInputs.cache
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\obj\Release\PagarMeOld.csproj.CopyComplete
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\obj\Release\PagarMeOld.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\obj\Release\PagarMeOld.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\AppContext\PagarMeOld\obj\Release\PagarMeOld.csprojAssemblyReference.cache
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PagarMeOld.dll.config
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PagarMeOld.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PagarMeOld.pdb
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\BouncyCastle.Crypto.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\Newtonsoft.Json.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PagarMe.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PhoneNumbers.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Buffers.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Collections.Immutable.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Memory.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Numerics.Vectors.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\BouncyCastle.Crypto.pdb
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\Newtonsoft.Json.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\PhoneNumbers.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Buffers.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Collections.Immutable.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Memory.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Numerics.Vectors.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\obj\Release\PagarMeOld.csproj.AssemblyReference.cache
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\obj\Release\PagarMeOld.csproj.CoreCompileInputs.cache
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\obj\Release\PagarMeOld.csproj.CopyComplete
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\obj\Release\PagarMeOld.dll
+D:\MeusDocumentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao2.0\AppContext\PagarMeOld\obj\Release\PagarMeOld.pdb

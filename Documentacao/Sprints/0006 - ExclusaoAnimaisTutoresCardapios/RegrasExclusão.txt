@@ -1,0 +1,19 @@
+Ao Excluir Tutor
+
+1) Exclusão Tutores
+2) Exclusão Animais
+3) Exclusão AnimaisPesoHistorico
+4) Exclusão Cardapio
+5) Exclusão CardapioAlimentos
+
+Ao Excluir Animais
+
+1) Exclusão Animais
+2) Exclusão AnimaisPesoHistorico
+3) Exclusão Cardapio
+4) Exclusão CardapioAlimentos
+
+Ao Excluir Cardapio
+
+1) Exclusão Cardapio
+2) Exclusão CardapioAlimentos

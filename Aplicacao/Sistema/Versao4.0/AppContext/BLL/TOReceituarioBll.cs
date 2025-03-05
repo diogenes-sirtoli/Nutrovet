@@ -1,0 +1,47 @@
+﻿using System;
+
+namespace BLL
+{
+    public class TOReceituarioBll
+    {
+        public int IdTutor { get; set; }
+        public string Tutor { get; set; }
+        public int IdAnimal { get; set; }
+        public string Animal { get; set; }
+        public int? IdEspecie { get; set; }
+        public string Especie { get; set; }
+        public int? IdRaca { get; set; }
+        public string Raca { get; set; }
+        public int IdCardapio { get; set; }
+        public string Descricao { get; set; }
+        public DateTime? DtCardapio { get; set; }
+
+        public int IdReceita { get; set; }
+        public int dTpRec { get; set; }
+        public string TipoReceita { get; set; }
+        public string Arquivo { get; set; }
+        public string NrReceita { get; set; }
+        public string InstrucoesReceita { get; set; }
+        public string Titulo { get; set; }
+        public string Veiculo { get; set; }
+        public string QuantVeic { get; set; }
+        public string Posologia { get; set; }
+        public string VeiculoSid { get; set; }
+        public string QuantVeicSid { get; set; }
+        public string PosologiaSid { get; set; }
+        public string VeiculoTid { get; set; }
+        public string QuantVeicTid { get; set; }
+        public string PosologiaTid { get; set; }
+        public string Prescricao { get; set; }
+        public int? dTblExigNutr { get; set; }
+        public int? QuantDietas { get; set; }
+        public string TblExigNutr { get; set; }
+        public DateTime? DataReceita { get; set; }
+        public string LocalReceita { get; set; }
+
+        public bool? Ativo { get; set; }
+        public int? IdOperador { get; set; }
+        public string IP { get; set; }
+        public DateTime? DataCadastro { get; set; }
+    }
+}

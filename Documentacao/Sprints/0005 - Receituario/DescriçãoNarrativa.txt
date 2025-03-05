@@ -1,0 +1,30 @@
+1 - Botão Receituário aparece para todos;
+2 - Somente quem é Intermediário e Completo usam o botão;
+3 - Quem for básico aparece a mensagem: "Funcionalidade disponível somente para planos Intermediário ou Completo. Faça um Upgrade de sua Assinatura no seu Perfil de usuário!";
+4 - Os campos de cabeçalho deverão ser adicionados pelo usuário junto ao seu perfil, para de lá serem utilizados na receita, caso não sejam adicionados, deixar em branco na geração da receita;
+5 - Ao clicar no botão "Receituário Inteligente" para dar início ao processo, adicionar um pop-up com a mensagem: "Para inserir seus dados ou de sua clínica no cabeçalho da receita bem como sua assinatura eletrônica, acesse o menu Perfil e configure.";
+6 - Aplicar uma caixa de seleção com "Não mostrar mais essa mensagem";
+7 - Selecionar qual o tipo de receituário;
+8 - Entrar um Título e um Resumo;
+
+9 - Suplementação:
+9.1 - Abrir nova Tela com uma lista dos Nutrientes presentes na Terceira Aba com um checkbox presente e mostrando duas colunas, quantem na dieta e quanto falta;
+9.2 - Já pré-selecionar os nutrientes que estão faltando;
+9.3 -  A quantidade que falta em um Textbox para poder ser feita a edição, caixa de edição chamada Incluir na receita;
+9.4 - Se estiver clicado o Checkbox, libera para inserção/edição do valor na caixa, caso contrário fica bloqueado;
+9.5 - Ao final gerar a receita em editor de texto para o usuário verificar ou fazer algum ajuste de formatação, então exibir o botão para impressão;
+9.6 - Se um item da receita for marcado e não for digitado o valore, o sistema exibe a mensagem que deve ser digitado um valor e desmarca o item marcado.
+
+10 - Nutracêuticos:
+10.1 - Busca o tipo de dieta informado na primeira aba;
+10.2 - Apresenta a lista de nutracêuticos com a seguinte divisão: "Nutracêuticos recomendados para a dieta X" e "Demais nutracêuticos";
+10.3 - Cada nutracêutico será apresentado com um checkbox no lado esquerdo do seu nome;
+10.4 - Ao lado direito as doses mínimas e máximas/Kg (atentar para a diferença entre cães e gatos e relacionar com o cadastro do paciente em formulação para definir quais valores serão mostrados);
+10.5 - No lado um campo para digitar a dose/Kg desejada (e ao lado do campo a unidade estabelecida na planilha para o nutracêutico, mas com a opção de troca de unidade caso o usuário prefira);
+10.6 - Mostrar a quantidade já calculada de acordo com o PESO ATUAL (não o peso ideal) do paciente, multiplicada pela dose definida no campo anterior, com o nome de "Quantidade a ser inserida";
+10.7 - Por fim, uma caixa de seleção com o intervalo de uso do nutracêutico, aqui serão apresentadas como opções o que está nas colunas intervalo1 e intervalo2, sendo deflaut o que está na coluna intervalo1 na planilha de nutracêuticos;
+10.8 - Só abir o campo de edição se o usuário clicar no checkbox, e se clicar e não definir a dose e o intervalo, um alerta deverá apresentar "Definia a dose e o intervalo de administração da receita ou demarque o item";
+10.9 - Os itens que forem selecionados na receita serão separados de acordo com o intervalo de administração selecionados, por exemplo, se estiverem selecionados nutracêuticos com BID e com SID, teremos duas receitas a serem elaboradas, uma com cada grupo. As opções possíveis serão SID, BID, TID ou por refeição, de forma que teremos no mínimo uma receita e no máximo 4 receitas frutos da mesma origem para gerar;
+10.10 - Após as seleções do usuário, e clicar em gerar receita, uma mensagem será exibida como alerta, informando "Você selecionou nutracêuticos com diferentes intervalos de fornecimento, dessa forma X receitas serão elaboradas, após a impressão de uma você será redirecionado para a geração e impressão das demais receitas." e as opções cancelar, que retorna ao nível anterior de seleção dos nutraceuticos, ou OK, que gerá a primeira receita em um editor de textos;
+10.11 - No caso de apenas uma receita ser elaborada porque o usuário selecionou apenas um tipo de intervalo, a mensagem não será exibida e vamos direto para a geração da receita no editor de textos;
+10.12 - 

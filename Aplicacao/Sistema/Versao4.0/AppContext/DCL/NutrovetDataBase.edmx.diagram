@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="651ceb554e34420285f2b2ff9fc831a0" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="NutrovetModel.Acessos" Width="1.5" PointX="7.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosAuxFuncoes" Width="1.5" PointX="5.5" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosAuxTelas" Width="1.5" PointX="8.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosFuncoesTelas" Width="1.5" PointX="10.75" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosVigenciaCupomDesconto" Width="1.5" PointX="7.75" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosVigenciaPlanos" Width="1.5" PointX="10" PointY="42.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AcessosVigenciaSituacao" Width="1.5" PointX="12.25" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AlimentoNutrientes" Width="1.5" PointX="13" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Alimentos" Width="1.5" PointX="10.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AlimentosAuxAlias" Width="1.5" PointX="13" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AlimentosAuxCategorias" Width="1.5" PointX="8.5" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AlimentosAuxFontes" Width="1.5" PointX="8.5" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AlimentosAuxGrupos" Width="1.5" PointX="8.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Animais" Width="1.5" PointX="10" PointY="65" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AnimaisAuxEspecies" Width="1.5" PointX="11.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AnimaisAuxRacas" Width="1.5" PointX="7.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.AnimaisPesoHistorico" Width="1.5" PointX="12.25" PointY="66" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Biblioteca" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.BibliotecaAuxSecoes" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Cardapio" Width="1.5" PointX="13.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.CardapiosAlimentos" Width="1.5" PointX="19" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.ConfigReceituario" Width="1.5" PointX="7.75" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Dietas" Width="1.5" PointX="13.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.DietasAlimentos" Width="1.5" PointX="16" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.ExigenciasNutrAuxIndicacoes" Width="1.5" PointX="11.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.ExigenciasNutricionais" Width="1.5" PointX="13.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.LogsSistema" Width="1.5" PointX="7.75" PointY="53.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Nutraceuticos" Width="1.5" PointX="21.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.NutraceuticosDietas" Width="1.5" PointX="23.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Nutrientes" Width="1.5" PointX="10.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.NutrientesAuxGrupos" Width="1.5" PointX="8.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Pessoas" Width="1.5" PointX="2.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.PessoasCartaoCredito" Width="1.5" PointX="7.75" PointY="57.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.PessoasDocumentos" Width="1.5" PointX="7.75" PointY="61.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.PlanosAssinaturas" Width="1.5" PointX="7.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.PortalContato" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.PrescricaoAuxTipos" Width="1.5" PointX="19" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Receituario" Width="1.5" PointX="16" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.ReceituarioNutrientes" Width="1.5" PointX="21.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NutrovetModel.Tutores" Width="1.5" PointX="7.75" PointY="65.875" IsExpanded="true" />
+        <AssociationConnector Association="NutrovetModel.FK_Acessos_AcessosAuxFuncoes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Acessos_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosFuncoesTelas_AcessosAuxFuncoes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosFuncoesTelas_AcessosAuxTelas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosVigenciaPlanos_AcessosVigenciaCupomDesconto" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosVigenciaPlanos_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosVigenciaPlanos_PessoasCartaoCredito" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosVigenciaPlanos_PlanosAssinaturas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AcessosVigenciaSituacao_AcessosVigenciaPlanos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AlimentoComponentes_Alimentos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AlimentoComponentes_AlimentosAuxComponentes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Alimentos_AlimentosAuxCategorias" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Alimentos_AlimentosAuxFontes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Alimentos_AlimentosAuxGrupos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Alimentos_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AlimentosAuxAlias_Alimentos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_CardapiosAlimentos_Alimentos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_DietasAlimentos_Alimentos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AlimentosAuxAlias_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Animais_AnimaisRacas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Animais_Tutores" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AnimaisPesoHistorico_Animais" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Cardapio_Animais" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AnimaisAuxRacas_AnimaisAuxEspecies" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Dietas_AnimaisAuxEspecies" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ExigenciasNutricionais_AnimaisAuxEspecies" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Nutraceuticos_AnimaisAuxEspecies" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Biblioteca_BibliotecaAuxSecoes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Cardapio_Cardapio" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Cardapio_Dietas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Cardapio_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_CardapiosAlimentos_Cardapio" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Receituario_Cardapio" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ConfigReceituario_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_DietasAlimentos_Dietas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_NutraceuticosDietas_Dietas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ExigenciasNutricionais_ExigenciasNutrAuxIndicacoes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ExigenciasNutricionais_Nutrientes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ExigenciasNutricionais_Nutrientes1" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_LogsSistema_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Nutraceuticos_Nutrientes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Nutraceuticos_PrescricaoAuxTipos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Nutraceuticos_PrescricaoAuxTipos1" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_NutraceuticosDietas_Nutraceuticos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_AlimentosAuxComponentes_AlimentosComponentesAuxGrupos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ReceituarioNutrientes_Nutrientes" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_PessoasCartaoCredito_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_PessoasDocumentos_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_PessoasDocumentos_Pessoas1" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Tutores_Pessoas" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_Tutores_Pessoas1" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ReceituarioNutrientes_PrescricaoAuxTipos" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ReceituarioNutrientes_PrescricaoAuxTipos1" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ReceituarioNutrientes_PrescricaoAuxTipos2" ManuallyRouted="false" />
+        <AssociationConnector Association="NutrovetModel.FK_ReceituarioNutrientes_Receituario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

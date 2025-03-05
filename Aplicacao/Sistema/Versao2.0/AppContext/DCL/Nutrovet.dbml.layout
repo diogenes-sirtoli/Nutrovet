@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 41, 26.5" name="Nutrovet">
+  <DataContextMoniker Name="/NutrovetDataContext" />
+  <nestedChildShapes>
+    <classShape Id="76e3ed22-59e4-4ec5-b67e-1bb4994e1ca7" absoluteBounds="0.5, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosAuxFuncoe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68c1018a-d033-447a-aa35-f0b6430a71cf" absoluteBounds="0.51500000000000057, 4.2100000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c426d974-0f74-461c-83b7-800927ccb162" absoluteBounds="0.5, 11.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosAuxTela" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a84cc1d0-7dc2-44bc-b2af-4b034433443c" absoluteBounds="0.51500000000000057, 11.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0ab8090-817b-4769-afa0-5dbf93bbee21" absoluteBounds="0.5, 7.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosFuncoesTela" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df86a474-94ce-44e2-b22e-9195b6c33e84" absoluteBounds="0.51500000000000057, 7.7100000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95711f7a-7c55-4af3-be3c-cb049fa6a44c" absoluteBounds="15, 15.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/AlimentosAuxGrupo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a604a69a-d0b6-4568-95e6-d566228d5cb3" absoluteBounds="15.015, 16.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 5.90549967447917); (1.5 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AcessosAuxFuncoe/AcessosAuxFuncoe_AcessosFuncoesTela" />
+      <nodes>
+        <classShapeMoniker Id="76e3ed22-59e4-4ec5-b67e-1bb4994e1ca7" />
+        <classShapeMoniker Id="a0ab8090-817b-4769-afa0-5dbf93bbee21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 11.25); (1.5 : 9.59780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AcessosAuxTela/AcessosAuxTela_AcessosFuncoesTela" />
+      <nodes>
+        <classShapeMoniker Id="c426d974-0f74-461c-83b7-800927ccb162" />
+        <classShapeMoniker Id="a0ab8090-817b-4769-afa0-5dbf93bbee21" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3bd0222d-f691-48c0-a976-55c934f1f83d" absoluteBounds="17.625, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/AnimaisAuxEspecy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e776eb01-21cf-4343-a284-7ed75660d6f1" absoluteBounds="17.64, 0.96000000000000085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e78b5b8-4e92-4a76-b542-e8e4619bbb2b" absoluteBounds="26.625, 19, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/NutrovetDataContext/AlimentoNutriente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36826b52-54b3-412c-8795-1967f9870507" absoluteBounds="26.64, 19.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0b777e1-1963-436a-9b20-72429c715ca0" absoluteBounds="16.5, 3.75, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/NutrovetDataContext/AnimaisAuxRaca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af09f635-07ff-4015-878e-fc1f8b183712" absoluteBounds="16.515, 4.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(18.0625 : 2.65549967447917); (18.0625 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AnimaisAuxEspecy/AnimaisAuxEspecy_AnimaisAuxRaca" />
+      <nodes>
+        <classShapeMoniker Id="3bd0222d-f691-48c0-a976-55c934f1f83d" />
+        <classShapeMoniker Id="d0b777e1-1963-436a-9b20-72429c715ca0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="12de1193-a05c-4116-b9bd-6a45c5b9e1a2" absoluteBounds="31.5, 4.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/ExigenciasNutrAuxIndicacoe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba180269-b974-47bc-9b39-96e045140d0b" absoluteBounds="31.515, 5.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f04d440a-5adc-474c-9c14-266b5f695fb7" absoluteBounds="23.875, 3, 2, 4.2708154296875">
+      <DataClassMoniker Name="/NutrovetDataContext/ExigenciasNutricionai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fd47324-99dd-499f-8351-f623fcf4d456" absoluteBounds="23.89, 3.46, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.625 : 1.32012241861979); (24.875 : 1.32012241861979); (24.875 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AnimaisAuxEspecy/AnimaisAuxEspecy_ExigenciasNutricionai" />
+      <nodes>
+        <classShapeMoniker Id="3bd0222d-f691-48c0-a976-55c934f1f83d" />
+        <classShapeMoniker Id="f04d440a-5adc-474c-9c14-266b5f695fb7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(31.5 : 5.70274983723958); (30.1770833333333 : 5.70274983723958 : JumpStart); (30.0104166666667 : 5.70274983723958 : JumpEnd); (29.6302058333333 : 5.70274983723958 : JumpStart); (29.4635391666667 : 5.70274983723958 : JumpEnd); (26.3333333333333 : 5.70274983723958 : JumpStart); (26.1666666666667 : 5.70274983723958 : JumpEnd); (25.875 : 5.70274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/ExigenciasNutrAuxIndicacoe/ExigenciasNutrAuxIndicacoe_ExigenciasNutricionai" />
+      <nodes>
+        <classShapeMoniker Id="12de1193-a05c-4116-b9bd-6a45c5b9e1a2" />
+        <classShapeMoniker Id="f04d440a-5adc-474c-9c14-266b5f695fb7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c03639f4-bd00-4921-8537-bd73f2302ce9" absoluteBounds="5, 4.125, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/NutrovetDataContext/Acesso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ac4ea1a-e7da-4708-bcb7-895cf98496f7" absoluteBounds="5.015, 4.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 5.01524983723958); (5 : 5.01524983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/AcessosAuxFuncoe/AcessosAuxFuncoe_Acesso" />
+      <nodes>
+        <classShapeMoniker Id="76e3ed22-59e4-4ec5-b67e-1bb4994e1ca7" />
+        <classShapeMoniker Id="c03639f4-bd00-4921-8537-bd73f2302ce9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="eeb5c947-b3ff-4ee8-9072-d6e5854f3efc" absoluteBounds="6, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/NutrovetDataContext/PortalContato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="669ad80c-a2aa-48c6-a84a-300a524afc75" absoluteBounds="6.0150000000000006, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="73636973-2294-4a33-9351-cfd335d83bd0" absoluteBounds="38.75, 1.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="decaf788-bcf3-4dc1-aa20-75835a7c5a1f" absoluteBounds="38.765, 2.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" absoluteBounds="34.875, 1.75, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/NutrovetDataContext/Nutraceutico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8293af95-8232-4f20-97e3-940e27fb76ac" absoluteBounds="34.89, 2.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.625 : 2.20274983723958); (24.7916666666667 : 2.20274983723958 : JumpStart); (24.9583333333333 : 2.20274983723958 : JumpEnd); (26.1666666666667 : 2.20274983723958 : JumpStart); (26.3333333333333 : 2.20274983723958 : JumpEnd); (34.875 : 2.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AnimaisAuxEspecy/AnimaisAuxEspecy_Nutraceutico" />
+      <nodes>
+        <classShapeMoniker Id="3bd0222d-f691-48c0-a976-55c934f1f83d" />
+        <classShapeMoniker Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(38.75 : 2.95274983723958); (36.875 : 2.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo/PrescricaoAuxTipo_Nutraceutico" />
+      <nodes>
+        <classShapeMoniker Id="73636973-2294-4a33-9351-cfd335d83bd0" />
+        <classShapeMoniker Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(38.75 : 2.35137491861979); (36.875 : 2.35137491861979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo/PrescricaoAuxTipo_Nutraceutico1" />
+      <nodes>
+        <classShapeMoniker Id="73636973-2294-4a33-9351-cfd335d83bd0" />
+        <classShapeMoniker Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="84adfea0-2df8-400a-876f-f46597a92a00" absoluteBounds="28.75, 11.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/NutrovetDataContext/Nutriente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d639fcff-8e77-4357-9f3f-9d9e73e7ac73" absoluteBounds="28.765, 12.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(29.75 : 15.1266097005208); (29.75 : 20.3662019856771); (28.625 : 20.3662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutriente/Nutriente_AlimentoNutriente" />
+      <nodes>
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+        <classShapeMoniker Id="5e78b5b8-4e92-4a76-b542-e8e4619bbb2b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(29.5468725 : 11.625); (29.5468725 : 4.52706112792969); (26.3333333333333 : 4.52706112792968 : JumpStart); (26.1666666666667 : 4.52706112792969 : JumpEnd); (25.875 : 4.52706112792969)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutriente/Nutriente_ExigenciasNutricionai" />
+      <nodes>
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+        <classShapeMoniker Id="f04d440a-5adc-474c-9c14-266b5f695fb7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(29.11718375 : 11.625); (29.11718375 : 6.41387741861979); (26.3333333333333 : 6.41387741861979 : JumpStart); (26.1666666666667 : 6.41387741861979 : JumpEnd); (25.875 : 6.41387741861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutriente/Nutriente_ExigenciasNutricionai1" />
+      <nodes>
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+        <classShapeMoniker Id="f04d440a-5adc-474c-9c14-266b5f695fb7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(30.09375 : 11.625); (30.09375 : 3.41387741861979); (34.875 : 3.41387741861979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutriente/Nutriente_Nutraceutico" />
+      <nodes>
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+        <classShapeMoniker Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bd89fde2-e705-463a-aed4-701645e7f7f2" absoluteBounds="32.25, 13.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/NutrovetDataContext/NutrientesAuxGrupo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22b3d13c-df9a-4538-a480-5f3604f93946" absoluteBounds="32.265, 14.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(32.25 : 14.3758048502604); (30.75 : 14.3758048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/NutrientesAuxGrupo/NutrientesAuxGrupo_Nutriente" />
+      <nodes>
+        <classShapeMoniker Id="bd89fde2-e705-463a-aed4-701645e7f7f2" />
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" absoluteBounds="19.5, 18.375, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/NutrovetDataContext/Alimentos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7a9b116-b1f2-47d2-999e-ec4fdb90903d" absoluteBounds="19.515, 18.835, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(21.5 : 20.28125); (26.625 : 20.28125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Alimentos/Alimentos_AlimentoNutriente" />
+      <nodes>
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+        <classShapeMoniker Id="5e78b5b8-4e92-4a76-b542-e8e4619bbb2b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 17.3490014648437); (19.9687475 : 17.3490014648437); (19.9687475 : 18.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AlimentosAuxGrupo/AlimentosAuxGrupo_Alimentos" />
+      <nodes>
+        <classShapeMoniker Id="95711f7a-7c55-4af3-be3c-cb049fa6a44c" />
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="627328e1-8ea4-4843-ade0-ffc678ebced7" absoluteBounds="24.25, 21.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/AlimentosAuxCategorias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c39bb259-dca5-473e-93cd-4c9eb7ec4e51" absoluteBounds="24.265, 22.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(24.25 : 21.8469555664063); (21.5 : 21.8469555664063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AlimentosAuxCategorias/AlimentosAuxCategorias_Alimentos" />
+      <nodes>
+        <classShapeMoniker Id="627328e1-8ea4-4843-ade0-ffc678ebced7" />
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a2ee83d2-57a7-4359-8607-e5ae2bbf2af0" absoluteBounds="0.75, 15.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/BibliotecaAuxSecoe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81232e2f-83ab-45bf-9ecc-6ac08687bb83" absoluteBounds="0.765, 16.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af8d2010-0713-44f1-a1fc-b957edd5d652" absoluteBounds="20.25, 3.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/NutrovetDataContext/AnimaisPesoHistorico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ceedcc6e-7bc0-4297-94a2-cba794f2df86" absoluteBounds="20.265, 3.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18b79439-105e-4345-8805-fdc672ed951d" absoluteBounds="21.625, 6.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/NutrovetDataContext/Cardapio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ae48499-0ca5-4aa2-8f9b-ae3bcc642af3" absoluteBounds="21.64, 7.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c4d205e-98f7-4a5e-9f22-66b299735f4b" absoluteBounds="5.125, 15.625, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/NutrovetDataContext/Biblioteca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b34d67b-ded7-451c-aa14-466f5a913c90" absoluteBounds="5.14, 16.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 16.7027498372396); (5.125 : 16.7027498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/BibliotecaAuxSecoe/BibliotecaAuxSecoe_Biblioteca" />
+      <nodes>
+        <classShapeMoniker Id="a2ee83d2-57a7-4359-8607-e5ae2bbf2af0" />
+        <classShapeMoniker Id="9c4d205e-98f7-4a5e-9f22-66b299735f4b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="acc4bc86-b621-4b92-9896-e882b7a1d851" absoluteBounds="25.125, 16, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/NutrovetDataContext/DietasAlimento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e937de8-4102-4df0-b714-9319da380ed1" absoluteBounds="25.14, 16.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(20.5 : 18.375); (20.5 : 16.7258020019531); (25.125 : 16.7258020019531)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Alimentos/Alimentos_DietasAlimento" />
+      <nodes>
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+        <classShapeMoniker Id="acc4bc86-b621-4b92-9896-e882b7a1d851" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="59cb8f70-4474-4d65-8387-cf715bd08017" absoluteBounds="21.625, 13.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/NutrovetDataContext/CardapiosAlimento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecc1fe7a-eeba-4b21-ad97-bbaf9d6ac53d" absoluteBounds="21.64, 13.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(21.0312525 : 18.375); (21.0312525 : 14.7700512695312); (21.625 : 14.7700512695312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Alimentos/Alimentos_CardapiosAlimento" />
+      <nodes>
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+        <classShapeMoniker Id="59cb8f70-4474-4d65-8387-cf715bd08017" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.625 : 11.2131168619792); (22.625 : 13.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Cardapio/Cardapio_CardapiosAlimento" />
+      <nodes>
+        <classShapeMoniker Id="18b79439-105e-4345-8805-fdc672ed951d" />
+        <classShapeMoniker Id="59cb8f70-4474-4d65-8387-cf715bd08017" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2e04f7af-0431-4e83-937f-14e83833713d" absoluteBounds="8.25, 3.25, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/NutrovetDataContext/PessoasDocumento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf7ad8bb-3c3d-4cde-8d86-f271dd6a3dfc" absoluteBounds="8.265, 3.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b324b7bf-83b1-4a7c-9fd6-6f96954a1633" absoluteBounds="10.125, 15.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosVigenciaSituacao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b6a261e-1a82-4448-9fd5-d8d568c94f89" absoluteBounds="10.14, 16.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0cb1179-033c-4e5b-94b9-9b88a1e106dc" absoluteBounds="10.875, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/NutrovetDataContext/PessoasCartaoCredito" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dba55be-b391-4677-90ce-31e924e018df" absoluteBounds="10.89, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7adc70f-7924-4e3b-acd1-266680720c9d" absoluteBounds="17, 12.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/NutrovetDataContext/Tutore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45592116-f3f2-4028-9cc5-ee3c1a2d3001" absoluteBounds="17.015, 13.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a2f8f36-1d8b-4f09-b9e4-782fcc6b79d6" absoluteBounds="18.625, 8.25, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/NutrovetDataContext/Animai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cffafa8a-34ec-40c4-9f38-ed160944dedc" absoluteBounds="18.64, 8.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.4374995 : 8.25); (19.4374995 : 4.39505126953125); (20.25 : 4.39505126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Animai/Animai_AnimaisPesoHistorico" />
+      <nodes>
+        <classShapeMoniker Id="6a2f8f36-1d8b-4f09-b9e4-782fcc6b79d6" />
+        <classShapeMoniker Id="af8d2010-0713-44f1-a1fc-b957edd5d652" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.625 : 9.73155843098958); (21.625 : 9.73155843098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Animai/Animai_Cardapio" />
+      <nodes>
+        <classShapeMoniker Id="6a2f8f36-1d8b-4f09-b9e4-782fcc6b79d6" />
+        <classShapeMoniker Id="18b79439-105e-4345-8805-fdc672ed951d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.5 : 6.67470540364583); (17.5 : 10.0969555664062); (18.625 : 10.0969555664062)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AnimaisAuxRaca/AnimaisAuxRaca_Animai" />
+      <nodes>
+        <classShapeMoniker Id="d0b777e1-1963-436a-9b20-72429c715ca0" />
+        <classShapeMoniker Id="6a2f8f36-1d8b-4f09-b9e4-782fcc6b79d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.0312475 : 12.875); (18.0312475 : 11.0516858496093); (18.625 : 11.0516858496093)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Tutore/Tutore_Animai" />
+      <nodes>
+        <classShapeMoniker Id="e7adc70f-7924-4e3b-acd1-266680720c9d" />
+        <classShapeMoniker Id="6a2f8f36-1d8b-4f09-b9e4-782fcc6b79d6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="63683408-bf79-4572-8c51-2ec10299216c" absoluteBounds="15.125, 18.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/NutrovetDataContext/AlimentosAuxFonte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94047fc8-c700-4020-be29-7ac2b85acfbe" absoluteBounds="15.14, 19.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(17.125 : 19.9527498372396); (19.5 : 19.9527498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AlimentosAuxFonte/AlimentosAuxFonte_Alimentos" />
+      <nodes>
+        <classShapeMoniker Id="63683408-bf79-4572-8c51-2ec10299216c" />
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ef66e0d8-b925-472d-becb-c0311371796d" absoluteBounds="13.625, 6, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/NutrovetDataContext/Pessoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbee2ca3-2113-42f7-adad-a9177efe2a6e" absoluteBounds="13.64, 6.46, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.625 : 7.02805826822917); (11.7083333333333 : 7.02805826822917 : JumpStart); (11.5416666666667 : 7.02805826822917 : JumpEnd); (10.2395833333333 : 7.02805826822917 : JumpStart); (10.0416666666667 : 7.02805826822917 : JumpEnd); (7 : 7.02805826822917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_Acesso" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="c03639f4-bd00-4921-8537-bd73f2302ce9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.28125 : 13.5399397786458); (14.28125 : 21.5809554036458); (19.5 : 21.5809554036458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_Alimentos" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="9b1a79b1-b649-4dec-aedd-27a88ccc0933" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.625 : 7.46875); (21.625 : 7.46875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_Cardapio" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="18b79439-105e-4345-8805-fdc672ed951d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.625 : 8.20153163411458); (10.125 : 8.20153163411458); (10.125 : 6.17470540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_PessoasDocumento" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="2e04f7af-0431-4e83-937f-14e83833713d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.625 : 7.61479495117188); (10.15625 : 7.61479495117188); (10.15625 : 6.17470540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_PessoasDocumento1" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="2e04f7af-0431-4e83-937f-14e83833713d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.09375 : 6); (14.09375 : 0.90625); (12.875 : 0.90625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_PessoasCartaoCredito" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="d0cb1179-033c-4e5b-94b9-9b88a1e106dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.625 : 13.2074698893229); (17 : 13.2074698893229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_Tutore" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="e7adc70f-7924-4e3b-acd1-266680720c9d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.625 : 12.9787349446615); (17 : 12.9787349446615)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_Tutore1" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="e7adc70f-7924-4e3b-acd1-266680720c9d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3667ca01-d2e9-494f-8aec-047e3bec8b1c" absoluteBounds="6.625, 11.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/NutrovetDataContext/PlanosAssinatura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0a86fe3-bfe2-4e14-81ea-0c558f65ce40" absoluteBounds="6.64, 12.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2a976f9-758f-40be-8d62-0b3eb27848bd" absoluteBounds="0.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NutrovetDataContext/LogrPais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6cf69e63-4289-4e2e-b9ef-bb804390e664" absoluteBounds="0.5149999999999999, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06a02b48-eed0-43ea-a85a-9e588834dc35" absoluteBounds="10.375, 10.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosVigenciaPlano" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea65d2dd-d259-4f64-9fb8-0bc9b697c4a8" absoluteBounds="10.39, 11.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 14.1266097005208); (11.25 : 15.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AcessosVigenciaPlano/AcessosVigenciaPlano_AcessosVigenciaSituacao" />
+      <nodes>
+        <classShapeMoniker Id="06a02b48-eed0-43ea-a85a-9e588834dc35" />
+        <classShapeMoniker Id="b324b7bf-83b1-4a7c-9fd6-6f96954a1633" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.625 : 12.0824698893229); (12.375 : 12.0824698893229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_AcessosVigenciaPlano" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="06a02b48-eed0-43ea-a85a-9e588834dc35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.625 : 3.6170068359375); (11.625 : 10.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PessoasCartaoCredito/PessoasCartaoCredito_AcessosVigenciaPlano" />
+      <nodes>
+        <classShapeMoniker Id="d0cb1179-033c-4e5b-94b9-9b88a1e106dc" />
+        <classShapeMoniker Id="06a02b48-eed0-43ea-a85a-9e588834dc35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 13.0008048502604); (10.375 : 13.0008048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PlanosAssinatura/PlanosAssinatura_AcessosVigenciaPlano" />
+      <nodes>
+        <classShapeMoniker Id="3667ca01-d2e9-494f-8aec-047e3bec8b1c" />
+        <classShapeMoniker Id="06a02b48-eed0-43ea-a85a-9e588834dc35" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="31bbd23c-a01d-45c8-af18-7be6b3639588" absoluteBounds="3.75, 8.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/NutrovetDataContext/AcessosVigenciaCupomDesconto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8c5ffd5-c2e8-450e-80d2-3c584c6651cd" absoluteBounds="3.7649999999999997, 8.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 11.2171541341146); (10.375 : 11.2171541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/AcessosVigenciaCupomDesconto/AcessosVigenciaCupomDesconto_AcessosVigenciaPlano" />
+      <nodes>
+        <classShapeMoniker Id="31bbd23c-a01d-45c8-af18-7be6b3639588" />
+        <classShapeMoniker Id="06a02b48-eed0-43ea-a85a-9e588834dc35" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="75caf014-8250-4cb9-a2aa-5f2bf5d9047c" absoluteBounds="15, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/NutrovetDataContext/LogsSistema" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e59e7a74-9614-4880-981d-66862e521994" absoluteBounds="15.015, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.3125 : 6); (15.3125 : 3.09780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_LogsSistema" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="75caf014-8250-4cb9-a2aa-5f2bf5d9047c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4c60d222-aea3-49af-be4d-a2022ebbc169" absoluteBounds="3.125, 0.875, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/NutrovetDataContext/LogrUF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46826358-ef4f-418c-be12-75b19b989748" absoluteBounds="3.14, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f1a2a1b-8872-4d9a-b577-8ab11fd4ce2a" absoluteBounds="10.875, 20.25, 2, 6.0015283203125">
+      <DataClassMoniker Name="/NutrovetDataContext/ConfigReceituario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0045a93d-c5a2-40c3-950d-eb9d6d2e4d36" absoluteBounds="10.89, 20.71, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.9218725 : 13.5399397786458); (13.9218725 : 23.9162418619792); (12.875 : 23.9162418619792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Pessoa/Pessoa_ConfigReceituario" />
+      <nodes>
+        <classShapeMoniker Id="ef66e0d8-b925-472d-becb-c0311371796d" />
+        <classShapeMoniker Id="6f1a2a1b-8872-4d9a-b577-8ab11fd4ce2a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="04cd5b28-5f10-48b5-a8d0-e0f657495603" absoluteBounds="25.375, 12.375, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/NutrovetDataContext/Dietas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21b72c92-aa4c-460b-b74a-ac88dde90624" absoluteBounds="25.39, 12.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(25.3765374615385 : 12.375); (25 : 11.9984625384615); (25 : 9.24196664583333); (23.625 : 9.24196664583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Dietas/Dietas_Cardapio" />
+      <nodes>
+        <classShapeMoniker Id="04cd5b28-5f10-48b5-a8d0-e0f657495603" />
+        <classShapeMoniker Id="18b79439-105e-4345-8805-fdc672ed951d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(26.25 : 15.2997054036458); (26.25 : 16)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Dietas/Dietas_DietasAlimento" />
+      <nodes>
+        <classShapeMoniker Id="04cd5b28-5f10-48b5-a8d0-e0f657495603" />
+        <classShapeMoniker Id="acc4bc86-b621-4b92-9896-e882b7a1d851" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.625 : 1.76143612792969); (24.7916666666667 : 1.76143612792968 : JumpStart); (24.9583333333333 : 1.76143612792969 : JumpEnd); (26.25 : 1.76143612792969); (26.25 : 12.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/AnimaisAuxEspecy/AnimaisAuxEspecy_Dietas" />
+      <nodes>
+        <classShapeMoniker Id="3bd0222d-f691-48c0-a976-55c934f1f83d" />
+        <classShapeMoniker Id="04cd5b28-5f10-48b5-a8d0-e0f657495603" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7af20245-758b-4c8d-b833-574b1dc51786" absoluteBounds="36.25, 8.875, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/NutrovetDataContext/ReceituarioNutriente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5038ad6a-b451-472d-ba7d-9a08e77b45df" absoluteBounds="36.265, 9.335, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(30.75 : 12.5777091471354); (36.25 : 12.5777091471354)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutriente/Nutriente_ReceituarioNutriente" />
+      <nodes>
+        <classShapeMoniker Id="84adfea0-2df8-400a-876f-f46597a92a00" />
+        <classShapeMoniker Id="7af20245-758b-4c8d-b833-574b1dc51786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(39.75 : 4.03049967447917); (39.75 : 11.2027091471354); (38.25 : 11.2027091471354)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo/PrescricaoAuxTipo_ReceituarioNutriente" />
+      <nodes>
+        <classShapeMoniker Id="73636973-2294-4a33-9351-cfd335d83bd0" />
+        <classShapeMoniker Id="7af20245-758b-4c8d-b833-574b1dc51786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(39.2187475 : 4.03049967447917); (39.2187475 : 10.0076020735677); (38.25 : 10.0076020735677)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo/PrescricaoAuxTipo_ReceituarioNutriente1" />
+      <nodes>
+        <classShapeMoniker Id="73636973-2294-4a33-9351-cfd335d83bd0" />
+        <classShapeMoniker Id="7af20245-758b-4c8d-b833-574b1dc51786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(40.2812525 : 4.03049967447917); (40.2812525 : 12.3978162207031); (38.25 : 12.3978162207031)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/PrescricaoAuxTipo/PrescricaoAuxTipo_ReceituarioNutriente2" />
+      <nodes>
+        <classShapeMoniker Id="73636973-2294-4a33-9351-cfd335d83bd0" />
+        <classShapeMoniker Id="7af20245-758b-4c8d-b833-574b1dc51786" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="48550794-b517-4165-b062-642df725fbd1" absoluteBounds="32.625, 18, 2, 2.5401025390625">
+      <DataClassMoniker Name="/NutrovetDataContext/NutraceuticosDieta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c9c0781-1ade-4dae-81ca-b16f07ce09c0" absoluteBounds="32.64, 18.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(27.375 : 15.2997054036458); (27.75 : 15.6747054036458); (27.75 : 17.625); (29.6666666666667 : 17.625 : JumpStart); (29.8333333333333 : 17.625 : JumpEnd); (32.25 : 17.625); (32.625 : 18)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Dietas/Dietas_NutraceuticosDieta" />
+      <nodes>
+        <classShapeMoniker Id="04cd5b28-5f10-48b5-a8d0-e0f657495603" />
+        <classShapeMoniker Id="48550794-b517-4165-b062-642df725fbd1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(35.53125 : 5.4439111328125); (35.53125 : 19.2700512695313); (34.625 : 19.2700512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NutrovetDataContext/Nutraceutico/Nutraceutico_NutraceuticosDieta" />
+      <nodes>
+        <classShapeMoniker Id="992116a7-9ac5-46b1-91f6-ef47085bdfe3" />
+        <classShapeMoniker Id="48550794-b517-4165-b062-642df725fbd1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="25b924fd-d5be-46ae-9be2-dfb8a7f22c61" absoluteBounds="26.625, 7.125, 2, 4.2708154296875">
+      <DataClassMoniker Name="/NutrovetDataContext/Receituario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5b070f0-549a-47c3-a68c-c0d2b2869009" absoluteBounds="26.64, 7.5850000000000009, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(28.625 : 10.1354077148437); (29.0338504166667 : 10.1354077148437 : JumpStart); (29.2005170833333 : 10.1354077148437 : JumpEnd); (29.4635391666667 : 10.1354077148437 : JumpStart); (29.6302058333333 : 10.1354077148437 : JumpEnd); (30.0104166666667 : 10.1354077148437 : JumpStart); (30.1770833333333 : 10.1354077148437 : JumpEnd); (35.4479166666667 : 10.1354077148437 : JumpStart); (35.6145833333333 : 10.1354077148437 : JumpEnd); (36.25 : 10.1354077148437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/Receituario/Receituario_ReceituarioNutriente" />
+      <nodes>
+        <classShapeMoniker Id="25b924fd-d5be-46ae-9be2-dfb8a7f22c61" />
+        <classShapeMoniker Id="7af20245-758b-4c8d-b833-574b1dc51786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.625 : 10.2900417539062); (24.9166666666667 : 10.2900417539062 : JumpStart); (25.0833333333333 : 10.2900417539062 : JumpEnd); (26.1666666666667 : 10.2900417539062 : JumpStart); (26.3333333333333 : 10.2900417539062 : JumpEnd); (26.625 : 10.2900417539062)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NutrovetDataContext/Cardapio/Cardapio_Receituario" />
+      <nodes>
+        <classShapeMoniker Id="18b79439-105e-4345-8805-fdc672ed951d" />
+        <classShapeMoniker Id="25b924fd-d5be-46ae-9be2-dfb8a7f22c61" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

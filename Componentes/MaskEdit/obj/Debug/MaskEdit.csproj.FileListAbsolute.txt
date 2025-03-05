@@ -1,0 +1,12 @@
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\bin\Debug\MaskEdit.dll
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\bin\Debug\MaskEdit.pdb
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\obj\Debug\MaskEdit.dll
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\obj\Debug\MaskEdit.pdb
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\obj\Debug\MaskEdit.csprojAssemblyReference.cache
+D:\Meus documentos\Programacao\Componentes\Web\MaskEdit\obj\Debug\MaskEdit.csproj.CoreCompileInputs.cache
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\bin\Debug\MaskEdit.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\bin\Debug\MaskEdit.pdb
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\obj\Debug\MaskEdit.csprojAssemblyReference.cache
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\obj\Debug\MaskEdit.csproj.CoreCompileInputs.cache
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\obj\Debug\MaskEdit.dll
+D:\Meus documentos\Programacao\Web\Nutrovet\Componentes\MaskEdit\obj\Debug\MaskEdit.pdb

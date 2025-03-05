@@ -1,0 +1,21 @@
+
+SET ANSI_NULLS, ANSI_PADDING, ANSI_WARNINGS, ARITHABORT, CONCAT_NULL_YIELDS_NULL, QUOTED_IDENTIFIER ON;
+
+SET NUMERIC_ROUNDABORT OFF;
+
+
+GO
+
+PRINT N'Creating [dbo].[IX_PlanosAssinaturas]...';
+
+
+GO
+ALTER TABLE [dbo].[PlanosAssinaturas]
+    ADD CONSTRAINT [IX_PlanosAssinaturas] UNIQUE NONCLUSTERED ([dNomePlano] ASC, [dPeriodo] ASC);
+
+
+GO
+PRINT N'Update complete.';
+
+
+GO

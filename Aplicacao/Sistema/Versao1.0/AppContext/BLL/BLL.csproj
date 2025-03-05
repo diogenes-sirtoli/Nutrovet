@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81200113-679F-4EB1-8B22-C1A0E1CCB688}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\slnAppContext\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\slnAppContext\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Funcoes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WinForms\Funcoes\bin\Funcoes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessoFuncoesTelasBll.cs" />
+    <Compile Include="AcessoFuncoesTelasExt.cs" />
+    <Compile Include="AnimaisPesoHistoricoBll.cs" />
+    <Compile Include="AnimaisPesoHistoricoExt.cs" />
+    <Compile Include="BibliotecaAuxSecoesExt.cs" />
+    <Compile Include="AlimentosAuxCategoriasBll.cs" />
+    <Compile Include="AlimentosAuxCategoriasExt.cs" />
+    <Compile Include="BICardapioAlimentosBll.cs" />
+    <Compile Include="BibliotecaAuxSecoesBll.cs" />
+    <Compile Include="NutraceuticosBll.cs" />
+    <Compile Include="NutraceuticosExt.cs" />
+    <Compile Include="BibliotecaBll.cs" />
+    <Compile Include="BibliotecaExt.cs" />
+    <Compile Include="PrescricaoAuxTiposBll.cs" />
+    <Compile Include="PrescricaoAuxTiposExt.cs" />
+    <Compile Include="PortalContatosBll.cs" />
+    <Compile Include="PortalContatosExt.cs" />
+    <Compile Include="NutrientesAuxGruposBll.cs" />
+    <Compile Include="AlimentosAuxGruposBll.cs" />
+    <Compile Include="AlimentosAuxFontesBll.cs" />
+    <Compile Include="NutrientesAuxGruposExt.cs" />
+    <Compile Include="AlimentosAuxGruposExt.cs" />
+    <Compile Include="AlimentosAuxFontesExt.cs" />
+    <Compile Include="AcessosVigenciaCupomBll.cs" />
+    <Compile Include="AcessosVigenciaCupomExt.cs" />
+    <Compile Include="DietasAlimentosBll.cs" />
+    <Compile Include="CardapioAlimentosBll.cs" />
+    <Compile Include="AlimentosNutrientesBll.cs" />
+    <Compile Include="DietasAlimentosExt.cs" />
+    <Compile Include="CardapioAlimentosExt.cs" />
+    <Compile Include="AlimentosNutrientesExt.cs" />
+    <Compile Include="CardapioBll.cs" />
+    <Compile Include="CardapioExt.cs" />
+    <Compile Include="DTS.cs" />
+    <Compile Include="ExigenciasNutrBll.cs" />
+    <Compile Include="NutrientesBll.cs" />
+    <Compile Include="ExigenciasNutrExt.cs" />
+    <Compile Include="NutrientesExt.cs" />
+    <Compile Include="DietasBll.cs" />
+    <Compile Include="DietasExt.cs" />
+    <Compile Include="PessoasBll.cs" />
+    <Compile Include="PessoasExt.cs" />
+    <Compile Include="AnimaisBll.cs" />
+    <Compile Include="PlanosAssinaturasBll.cs" />
+    <Compile Include="AnimaisExt.cs" />
+    <Compile Include="PlanosAssinaturasExt.cs" />
+    <Compile Include="AcessosVigenciaSituacaoBll.cs" />
+    <Compile Include="AcessosVigenciaPlanosBll.cs" />
+    <Compile Include="AcessosBll.cs" />
+    <Compile Include="AcessosVigenciaSituacaoExt.cs" />
+    <Compile Include="AcessosVigenciaPlanosExt.cs" />
+    <Compile Include="AcessosExt.cs" />
+    <Compile Include="AlimentosBll.cs" />
+    <Compile Include="Dominios.cs" />
+    <Compile Include="ExigenciasNutrAuxIndicacoesBll.cs" />
+    <Compile Include="AnimaisAuxRacasBll.cs" />
+    <Compile Include="AnimaisAuxEspeciesBll.cs" />
+    <Compile Include="AlimentosExt.cs" />
+    <Compile Include="ExigenciasNutrAuxIndicacoesExt.cs" />
+    <Compile Include="AnimaisAuxRacasExt.cs" />
+    <Compile Include="AnimaisAuxEspeciesExt.cs" />
+    <Compile Include="AcessosAuxTelasBll.cs" />
+    <Compile Include="AcessosAuxFuncoesBll.cs" />
+    <Compile Include="AcessosAuxTelasExt.cs" />
+    <Compile Include="AcessosAuxFuncoesExt.cs" />
+    <Compile Include="Retorno.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleSessionPreparationBll.cs" />
+    <Compile Include="Tela3Bll.cs" />
+    <Compile Include="TOAcessosBll.cs" />
+    <Compile Include="TOAcessosVigenciaCupomBll.cs" />
+    <Compile Include="TOAlimentosBll.cs" />
+    <Compile Include="TOCardapioBll.cs" />
+    <Compile Include="TOAcessosVigenciaSituacaoBll.cs" />
+    <Compile Include="TOAcessosVigenciaPlanosBll.cs" />
+    <Compile Include="TOExigNutrTabelasBll.cs" />
+    <Compile Include="TOCardapioResumoBll.cs" />
+    <Compile Include="TODietasAlimentosBll.cs" />
+    <Compile Include="TOCardapioAlimentosBll.cs" />
+    <Compile Include="TOExigenciasNutricionaisBll.cs" />
+    <Compile Include="TONutraceuticosBll.cs" />
+    <Compile Include="TOBibliotecaBll.cs" />
+    <Compile Include="TORacasBll.cs" />
+    <Compile Include="TOFuncoesTelas.cs" />
+    <Compile Include="TOAnimaisBll.cs" />
+    <Compile Include="TODietasBll.cs" />
+    <Compile Include="TONutrientesBll.cs" />
+    <Compile Include="TOPessoas.cs" />
+    <Compile Include="TOAlimentoNutrientesBll.cs" />
+    <Compile Include="TOSistemaResumoBll.cs" />
+    <Compile Include="TOPlanosBll.cs" />
+    <Compile Include="TOPortalContatoBll.cs" />
+    <Compile Include="TOToastr.cs" />
+    <Compile Include="TOTela3Bll.cs" />
+    <Compile Include="TOTela4Bll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{e3c21b11-b8d1-45fe-9372-13fcb0fcf2ac}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DCL\DCL.csproj">
+      <Project>{ca5290f6-6cf9-4617-81c5-ced0f99133a5}</Project>
+      <Name>DCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

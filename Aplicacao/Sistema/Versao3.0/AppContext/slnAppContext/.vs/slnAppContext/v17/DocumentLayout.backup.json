@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Meus Documentos\\Programacao\\Web\\Nutrovet\\Aplicacao\\Sistema\\Versao3.0\\AppContext\\slnAppContext\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA5290F6-6CF9-4617-81C5-CED0F99133A5}|..\\DCL\\DCL.csproj|d:\\meus documentos\\programacao\\web\\nutrovet\\aplicacao\\sistema\\versao3.0\\appcontext\\dcl\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81200113-679F-4EB1-8B22-C1A0E1CCB688}|..\\BLL\\BLL.csproj|d:\\meus documentos\\programacao\\web\\nutrovet\\aplicacao\\sistema\\versao3.0\\appcontext\\bll\\assinaturapmobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "D:\\Meus Documentos\\Programacao\\Web\\Nutrovet\\Aplicacao\\Sistema\\Versao3.0\\AppContext\\DCL\\Conexao.cs",
+              "RelativeDocumentMoniker": "..\\DCL\\Conexao.cs",
+              "ToolTip": "D:\\Meus Documentos\\Programacao\\Web\\Nutrovet\\Aplicacao\\Sistema\\Versao3.0\\AppContext\\DCL\\Conexao.cs",
+              "RelativeToolTip": "..\\DCL\\Conexao.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T01:25:12.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssinaturaPMOBll.cs",
+              "DocumentMoniker": "D:\\Meus Documentos\\Programacao\\Web\\Nutrovet\\Aplicacao\\Sistema\\Versao3.0\\AppContext\\BLL\\AssinaturaPMOBll.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\AssinaturaPMOBll.cs",
+              "ToolTip": "D:\\Meus Documentos\\Programacao\\Web\\Nutrovet\\Aplicacao\\Sistema\\Versao3.0\\AppContext\\BLL\\AssinaturaPMOBll.cs",
+              "RelativeToolTip": "..\\BLL\\AssinaturaPMOBll.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T01:24:48.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

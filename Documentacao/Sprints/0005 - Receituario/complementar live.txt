@@ -1,0 +1,96 @@
+{
+    "object": "plan",
+    "id": 2300994,
+    "amount": 1000,
+    "days": 30,
+    "name": "Receituário Mensal - Módulo Complementar",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2300995,
+    "amount": 950,
+    "days": 30,
+    "name": "Receituário Mensal - Voucher 5% Desconto",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2300996,
+    "amount": 950,
+    "days": 30,
+    "name": "Receituário Mensal - Voucher 30 Dias e 5% Desconto",
+    "trial_days": 30
+},
+{
+    "object": "plan",
+    "id": 2300999,
+    "amount": 0000,
+    "days": 30,
+    "name": "Receituário Mensal - Voucher 30 Dias",
+    "trial_days": 30
+},
+{
+    "object": "plan",
+    "id": 2301024,
+    "amount": 10000,
+    "days": 365,
+    "name": "Receituário Anual - Módulo Complementar",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2301030,
+    "amount": 9500,
+    "days": 365,
+    "name": "Receituário Anual - Voucher 5%",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2301032,
+    "amount": 1500,
+    "days": 30,
+    "name": "Prontuário Mensal - Módulo Complementar",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2301033,
+    "amount": 1425,
+    "days": 30,
+    "name": "Prontuário Mensal - Voucher 5% Desconto",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2301046,
+    "amount": 1425,
+    "days": 30,
+    "name": "Prontuário Mensal - Voucher 30 Dias e 5% Desconto",
+    "trial_days": 30
+},
+{
+    "object": "plan",
+    "id": 2301050,
+    "amount": 1,
+    "days": 30,
+    "name": "Prontuário Mensal - Voucher 30 Dias",
+    "trial_days": 30
+},
+{
+    "object": "plan",
+    "id": 2301051,
+    "amount": 15000,
+    "days": 365,
+    "name": "Prontuário Anual - Módulo Complementar",
+    "trial_days": 0
+},
+{
+    "object": "plan",
+    "id": 2301053,
+    "amount": 14250,
+    "days": 365,
+    "name": "Prontuário Anual - Voucher 5% Desconto",
+    "trial_days": 0
+}	

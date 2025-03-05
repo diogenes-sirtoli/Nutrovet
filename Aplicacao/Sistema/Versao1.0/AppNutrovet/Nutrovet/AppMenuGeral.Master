@@ -1,0 +1,451 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AppMenuGeral.master.cs" Inherits="Nutrovet.AppMenuGeral" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title><%: Page.Title %>Nutrologia Veterinária - NutroVET</title>
+    <link href="<%=ResolveClientUrl("~/CSS/all.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/rotatingcard/rotating-card.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/bootstrap.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/brands.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/regular.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/solid.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/rotatingcard/pe-icon-7-stroke.css")%>" rel="stylesheet" />
+
+    <link href="<%=ResolveClientUrl("~/CSS/solid.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/font-awesome/css/font-awesome.css")%>" rel="stylesheet" />
+    <!-- Toastr style -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/toastr/toastr.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/animate.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/style.css")%>" rel="stylesheet" />
+    <!-- Gritter -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/gritter/jquery.gritter.css")%>" rel="stylesheet" />
+    <!-- Switchery -->
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/switchery/switchery.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/datapicker/bootstrap-datepicker.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/touchspin/jquery.bootstrap-touchspin.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/slick/slick.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/slick/slick-theme.css")%>" rel="stylesheet" />
+
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/datatables/datatables.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/CSS/plugins/iziModal/iziModal.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveClientUrl("~/Imagens/favicon.ico")%>" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Mainly scripts -->
+
+    <script src="<%=ResolveClientUrl("~/Scripts/jquery-3.3.1.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/bootstrap.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/moment.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/datatables/datatables.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.tooltip.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.spline.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.resize.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/flot/jquery.flot.pie.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/peity/jquery.peity.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/switchery/switchery.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/demo/peity-demo.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/inspinia.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/pace/pace.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/jquery-ui/jquery-ui.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/gritter/jquery.gritter.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/sparkline/jquery.sparkline.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/demo/sparkline-demo.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/chartJs/Chart.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/toastr/toastr.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/toastr/ToastScript.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/justgage/raphael-min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/slick/slick.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/plugins/iziModal/iziModal.min.js")%>" type="text/javascript"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <div class="main_container">
+                <div id="wrapper">
+                    <nav class="navbar-default navbar-static-side" role="navigation">
+                        <div class="sidebar-collapse ">
+                            <ul class="nav metismenu" id="side-menu">
+                                <li class="nav-header">
+                                    <div class="dropdown profile-element">
+                                        <span>
+                                            <asp:HyperLink ID="hlUsuario" runat="server" NavigateUrl="~/MenuGeral.aspx" CssClass="navbar-minimalize" role="navigation">
+                                                <asp:Image ID="imgUserIcon" ImageUrl="~/Imagens/user1.png" alt="..." CssClass="img-thumbnail profile_img" runat="server" />
+                                            </asp:HyperLink>
+                                        </span>
+                                        <asp:HyperLink ID="hlNomeUsuario" runat="server" NavigateUrl="#" data-toggle="dropdown" CssClass="dropdown-toggle">
+                                            <span class="clear">
+                                                <span class="block m-t-xs">
+                                                    <strong class="font-bold">
+                                                        <asp:Label ID="lblUsuario" runat="server" Text="Nome do Usuário"></asp:Label>
+                                                    </strong>
+                                                </span>
+                                                <span class="text-muted text-xs block">
+                                                    <asp:Label ID="lblTpPessoa" runat="server" Text="Tipo de Usuário"></asp:Label>
+                                                    <b class="caret"></b>
+                                                </span>
+                                            </span>
+                                        </asp:HyperLink>
+                                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                            <li>
+                                                <asp:LinkButton ID="lbPerfil" runat="server" OnClick="lbPerfil_Click"><i class="fas fa-portrait"></i> Perfil</asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <asp:LinkButton ID="lbTermoUso" runat="server" OnClick="hlMostrarTermoUso_Click"><i class="fas fa-file-invoice"></i> Mostar Termo de Uso</asp:LinkButton>
+                                            </li>
+
+                                            <li class="divider"></li>
+                                            <li>
+                                                <asp:LinkButton ID="lbSairSistema" runat="server" OnClick="lbSairSistema_Click"><i class="fas fa-power-off"></i> Sair do Sistema</asp:LinkButton>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="logo-element" data-toggle="tooltip" data-placement="right" title="NutroVET">
+                                        <asp:HyperLink ID="hlSiglaNV" runat="server" NavigateUrl="#" Text="NV" CssClass="navbar-minimalize" role="navigation"></asp:HyperLink>
+                                    </div>
+                                </li>
+                                <!--class="active"-->
+                                <li>
+                                    <asp:LinkButton ID="lbInicio" runat="server" OnClick="lbInicio_Click" data-toggle="tooltip" data-placement="right" title="Início"><i class="fas fa-home"></i><span class="nav-label"> Início</span></asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hlAdministracao" CssClass="collapse-link" runat="server" NavigateUrl="#" data-toggle="tooltip" data-placement="right" title="Administração">
+                                        <i class="fa fa-university"></i><span class="nav-label"> Administração</span>
+                                    </asp:HyperLink>
+                                    <ul class="nav nav-second-level collapse">
+                                        <li>
+                                            <asp:HyperLink ID="hlLogon" CssClass="collapse-link" runat="server" NavigateUrl="#" data-toggle="tooltip" data-placement="right" title="Logon">
+                                                <i class="fas fa-sign-in-alt"></i> Logon <span class="fa arrow"></span>
+                                            </asp:HyperLink>
+                                            <ul class="nav nav-third-level">
+                                                <li>
+                                                    <asp:LinkButton ID="lbFuncoesUsuarios" OnClick="LinkButton1_Click" runat="server"> Funções de Usuário</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbTelasFuncoes" runat="server" Visible="False">Telas das Funções</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbTelasSistema" OnClick="LinkButton2_Click" runat="server"> Telas do Sistema</asp:LinkButton>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="hlkAjustes" CssClass="collapse-link" runat="server" NavigateUrl="#" data-toggle="tooltip" data-placement="right" title="Ajustes">
+                                                <i class="fas fa-cogs"></i> Ajustes <span class="fa arrow"></span>
+                                            </asp:HyperLink>
+                                            <ul class="nav nav-third-level">
+                                                <li>
+                                                    <asp:LinkButton ID="lbEspecie" runat="server" OnClick="lbEspecie_Click"> Espécies</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbRaca" runat="server" OnClick="lbRaca_Click"> Raças <hr Style ="border-bottom-style: solid; border-width: 1px; border-color: dimgrey;" /></asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="menuAjAl" class="collapse-link">Alimentos <span class="fa arrow"></span></a>
+                                                    <ul class="nav nav-second-level">
+                                                        <li>
+                                                            <asp:LinkButton ID="lbFontesAlimentos" runat="server" OnClick="lbFontesAlimentos_Click">&nbsp;&nbsp;&nbsp;&nbsp; Fontes</asp:LinkButton>
+                                                        </li>
+                                                        <li>
+                                                            <asp:LinkButton ID="lbGuposAlimentos" runat="server" OnClick="lbGuposAlimentos_Click">&nbsp;&nbsp;&nbsp;&nbsp; Grupos</asp:LinkButton>
+                                                        </li>
+                                                        <li>
+                                                            <asp:LinkButton ID="lbCategoriasAlimentos" runat="server" OnClick="lbCategoriasAlimentos_Click">&nbsp;&nbsp;&nbsp;&nbsp; Categorias</asp:LinkButton>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbGrpNutri" runat="server" OnClick="lbGrpNutri_Click"> Grupos de Nutrientes <hr Style ="border-bottom-style: solid; border-width: 1px; border-color: dimgrey;" /></asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbIndicacoesNutrientes" runat="server" OnClick="lbIndicacoesNutrientes_Click"> Indicações das Exigências Nutricionais <hr Style ="border-bottom-style: solid; border-width: 1px; border-color: dimgrey;"/></asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="menuTipos" class="collapse-link">Tipos <span class="fa arrow"></span></a>
+                                                    <ul class="nav nav-second-level">
+                                                        <li>
+                                                            <asp:LinkButton ID="lbDietas" runat="server" OnClick="lbDietas_Click">&nbsp;&nbsp;&nbsp;&nbsp; Dietas </asp:LinkButton>
+                                                        </li>
+                                                        <li>
+                                                            <asp:LinkButton ID="lbPrescr" runat="server" OnClick="lbPrescr_Click">&nbsp;&nbsp;&nbsp;&nbsp; Prescrições </asp:LinkButton>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="hlGerencia" CssClass="collapse-link" runat="server" NavigateUrl="#" data-toggle="tooltip" data-placement="right" title="Gerenciamento">
+                                                <i class="fas fa-tools"></i> Gerenciamento <span class="fa arrow"></span>
+                                            </asp:HyperLink>
+                                            <ul class="nav nav-third-level">
+                                                <li>
+                                                    <asp:LinkButton ID="hlAlimentos" runat="server" OnClick="hlAlimentos_Click"> Alimentos</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbAssinantes" runat="server" CssClass="divider" OnClick="lbAssinantes_Click"> Assinantes</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="menuAjBi" class="collapse-link">Biblioteca <span class="fa arrow"></span></a>
+                                                    <ul class="nav nav-second-level">
+                                                        <li>
+                                                            <asp:LinkButton ID="lbSecoes" runat="server" OnClick="lbSecoes_Click">&nbsp;&nbsp;&nbsp;&nbsp; Seções</asp:LinkButton>
+                                                        </li>
+                                                        <li>
+                                                            <asp:LinkButton ID="lbArquivosSecoes" runat="server" OnClick="lbArquivosSecoes_Click">&nbsp;&nbsp;&nbsp;&nbsp; Arquivos</asp:LinkButton>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbCupons" runat="server" CssClass="divider" OnClick="lbCupons_Click"> Cupons</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbMensagens" runat="server" OnClick="lbMensagens_Click"> Mensagens do Portal</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbNutraceuticos" runat="server" OnClick="lbNutraceuticos_Click"> Nutracêuticos</asp:LinkButton>
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="lbNutrientes" runat="server" OnClick="lbNutrientes_Click"> Nutrientes</asp:LinkButton>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbAlimentos" runat="server" data-toggle="tooltip" data-placement="right" title="Alimentos" OnClick="lbAlimentos_Click">
+                                        <i class="fas fa-utensils"></i><span class="nav-label"> Alimentos</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbTutores" runat="server" data-toggle="tooltip" data-placement="right" title="Tutores" OnClick="lbTutores_Click">
+                                        <i class="fas fa-user"></i><span class="nav-label"> Tutores</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbPacientes" runat="server" data-toggle="tooltip" data-placement="right" title="Pacientes" OnClick="lbPacientes_Click">
+                                        <i class="fa fa-paw"></i><span class="nav-label"> Pacientes</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbCardapios" Style="border-bottom-style: solid; border-width: 1px; border-color: dimgrey;" runat="server" data-toggle="tooltip" data-placement="right" title="Cardápios" OnClick="lbCardapios_Click">
+                                        <i class="fas fa-balance-scale"></i><span class="nav-label"> Cardápios</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbTutoriais" runat="server" data-toggle="tooltip" data-placement="right" title="Tutoriais" OnClick="lbTutoriais_Click">
+                                        <i class="fa fa-copy"></i><span class="nav-label"> Tutoriais</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbBilioteca" runat="server" data-toggle="tooltip" data-placement="right" title="Biblioteca" OnClick="lbBiblioteca_Click">
+                                        <i class="fas fa-book-reader"></i><span class="nav-label"> Biblioteca</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbTabelaNutraceuticos" runat="server" Style="border-bottom-style: solid; border-width: 1px; border-color: dimgrey;" data-toggle="tooltip" data-placement="right" title="Nutracêuticos" OnClick="lbTabelaNutraceuticos_Click">
+                                        <i class="fas fa-drumstick-bite"></i><span class="nav-label"> Nutracêuticos</span>
+                                    </asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbSair" runat="server" data-toggle="tooltip" data-placement="right" title="Sair do Sistema" OnClick="lbSairSistema_Click">
+                                        <i class="fas fa-power-off"></i><span class="nav-label">  Sair do Sistema</span>
+                                    </asp:LinkButton>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                        <ContentTemplate>
+                            <!-- Início Modal Termo de Uso -->
+                            <div id="modalTermo" class="modal-dialog modal-lg" runat="server" style="display: none">
+                                <div class="modal-content rotateInDownLeft">
+                                    <div class="modal-header modal-header-warning">
+                                        <h4 class="modal-title text-center"><i class="fas fa-book-reader"></i>&nbsp;TERMO DE USO</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4>Agradecemos por usar nossos serviços.</h4>
+                                        <p>
+                                            Os Serviços serão fornecidos pela <strong>IB Serviços Veterinários LTDA</strong> (CONTRATADA), empresa de direito
+                           privado com sede na SQSW 104 Bloco C sala 105, na cidade de Brasília, Distrito Federal, inscrita no CNPJ sob o Nº 31.174.919/0001-25.
+                                        </p>
+                                        <p>Ao se cadastrar no NutroVET, você (CONTRATANTE) está concordando com estes <strong>TERMOS DE USO e condições. Leia-os com atenção.</strong></p>
+                                        <p><strong>Do NutroVET- Objeto e Serviços</strong></p>
+                                        <p>1. O presente contrato tem como objeto a licença de uso individual do software NutroVET, bem como a prestação de serviços de software para a CONTRATANTE.</p>
+                                        <p>2. A prestação de serviços de software compreenderá a disponibilização de um espaço virtual para que você CONTRATANTE usufrua dos recursos lá existentes.</p>
+                                        <p><strong>Das suas Obrigações e Responsabilidade</strong></p>
+                                        <p>3. É preciso que você CONTRANTE siga todas as políticas de uso previstas neste TERMO DE USO, em especial as suas Obrigações.</p>
+                                        <p>4. Cabe a você CONTRATANTE a responsabilidade exclusiva de inserir dados no espaço virtual fornecido pela CONTRATADA, zelando por seu bom uso.</p>
+                                        <p>5. Você CONTRATANTE é a única responsável, civil e criminalmente, por todos os dados inseridos no espaço virtual, e declara, ainda, não ter qualquer impedimento legal para o exercício de suas atividades.</p>
+                                        <p>6. Você CONTRATANTE declara ter ciência de que a CONTRATADA não tem qualquer ingerência nos dados, fatos e/ou informações lançados no espaço virtual, sendo esses de sua inteira responsabilidade.</p>
+                                        <p>7. você CONTRATANTE é a única responsável pelos problemas decorrentes do uso incorreto do software.</p>
+                                        <p>8. você CONTRATANTE se obriga e se compromete a manter sempre atualizados junto á CONTRATADA seu endereço eletrônico (e-mail), para fins de comunicação entre as partes.</p>
+                                        <p>9. Você CONTRATANTE declara, ser legalmente habilitado para exercício profissional da Medicina Veterinário ou Zootecnia, ou ter colado grau em alguma Faculdade de Medicina Veterinária ou Zootecnia, ou ainda, estar regularmente matriculado em alguma Faculdade de Medicina Veterinária ou Zootecnia.</p>
+                                        <p><strong>Das nossas Obrigações e Responsabilidades</strong></p>
+                                        <p>9. Fornecemos nossos Serviços usando um nível comercialmente razoável de capacidade e cuidado e esperamos que você aproveite seu uso deles. Nós CONTRATADA nos comprometemos a manter o espaço virtual em funcionamento, exceto em casos de impedimentos técnicos, atos relacionados à terceiros que impeçam o funcionamento do Serviços, caso fortuito e/ou força maior.</p>
+                                        <p><strong>Do Valor e Forma De Pagamento do Serviço</strong></p>
+                                        <p>10. Nós CONTRATADA disponibilizaremos os serviços previstos no OBJETO do contrato de acordo com o plano de assinatura, mediante a remuneração escolhida.</p>
+                                        <p>Parágrafo primeiro: Na modalidade básica você CONTRATANTE poderá cadastrar o limite máximo de 10 (dez) pacientes no sistema, no entanto não há limites de emissão de dietas ou receitas para cada paciente. Para cadastrar um número maior de pacientes você CONTRATANTE terá que se adequar a um dos nossos demais planos disponíveis.</p>
+                                        <p>Parágrafo segundo: Na modalidade intermediária você CONTRATANTE poderá cadastrar o limite máximo de 20 (vinte) pacientes no sistema, no entanto não há limites de emissão de dietas ou receitas para cada paciente. Para cadastrar um número maior de pacientes você CONTRATANTE terá que se adequar a um dos nossos demais planos disponíveis.</p>
+                                        <p>Parágrafo terceiro: Na modalidade ilimitada você CONTRATANTE poderá cadastrar um número ilimitado de pacientes no sistema, e sem limites de emissão de dietas ou receitas para cada paciente.</p>
+                                        <p>Parágrafo quarto: Efetuada a assinatura e uma vez cancelada, esta somente poderá ser reativada mediante a escolha de novo plano de assinatura, condizente com o número de cadastros já realizados no sistema.</p>
+                                        <p>Parágrafo único: Uma vez cancelada a assinatura, você CONTRATANTE perde o direito por quaisquer descontos ou vantagens obtidos anteriormente.</p>
+                                        <p><strong>Do Prazo de Duração, da Renovação e do Cancelamento/Rescisão dos nossos Serviços</strong></p>
+                                        <p>11. O presente contrato tem a duração de 30 (trinta) dias ou 12 (doze) meses a contar do seu aceite, dependendo da modalidade de pagamento escolhida (mensal ou anual), renovando-se automaticamente após o período de vencimento.</p>
+                                        <p>12. O presente contrato pode ser desfeito/rescindido por qualquer das partes, independentemente de multa, a qualquer tempo.</p>
+                                        <p>13. Todos os nossos planos se renovam automaticamente e você contratante declara estar ciente e de acordo que o cancelamento de cobranças deverá ser providenciados diretamente por você CONTRATANTE ao próprio site, conforme o meio de pagamento por você escolhido.</p>
+                                        <p>14. Esperamos que você utilize os nossos serviços por muito tempo. Contudo, a ausência de pagamento acarretará, automaticamente, o bloqueio da utilização do espaço virtual. Não efetuado o pagamento no prazo de 15 (quinze) dias a contar da remessa de correspondência eletrônica para o e-mail por você CONTRATANTE informado, o presente contrato será considerado rescindido de pleno direito, autorizando a CONTRATADA a excluir a sua conta e todos os dados nela contidos.</p>
+                                        <p>15. Nós CONTRATADA podemos modificar este Termos de Uso e os serviços prestados, tais como funcionalidades do serviço, layout, etc., independentemente de prévio aviso, condição essa que você CONTRATANTE declara aceitar, não cabendo qualquer tipo de ressarcimento decorrente dessas alterações a você CONTRATANTE. Se você CONTRANTE não concordar com os termos alterados do Serviço, deve descontinuar o seu uso, observado o previsto no que toca à cancelamento do serviço e forma de pagamento escolhida.</p>
+                                        <p>16. Em caso de conflito entre estes termos e os termos adicionais, os termos adicionais prevalecerão com relação a esse conflito.</p>
+                                        <p>17. Estes termos regem a relação entre você CONTRANTE e nós CONTRATADA. Eles não criam quaisquer direitos para terceiros.</p>
+                                        <p>18. Caso você não cumpra estes termos e nós não tomemos providências imediatas, isso não significa que estamos renunciando a quaisquer direitos que possamos ter (como tomar providências futuras).</p>
+                                        <p><strong>Do Foro</strong></p>
+                                        <p>19. Para resolver quaisquer controvérsias decorrentes do presente contrato, as partes elegem o Foro Central da comarca de Brasília - DF, com renúncia expressa a outros, por mais privilegiados que sejam.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <asp:LinkButton runat="server" ID="lbFecharTermoUso" CssClass="btn btn-sm btn-white pull-right  m-b" data-dismiss="modal"><i class="fas fa-door-open"></i> Fechar </asp:LinkButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <ajaxToolkit:ModalPopupExtender ID="mdlTermo" runat="server"
+                                PopupControlID="modalTermo" BackgroundCssClass="modalBackground"
+                                RepositionMode="RepositionOnWindowResize"
+                                TargetControlID="lblTermosUso">
+                            </ajaxToolkit:ModalPopupExtender>
+                            <asp:Label ID="lblTermosUso" runat="server" Text=""></asp:Label>
+                            <!-- Fim Modal Termo de Uso -->
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <!-- Modal Tabela Nutracêuticos -->
+                            <div id="modalNutraceuticos" runat="server" class="modal-dialog modalControle" style="display: none">
+                                <div class="modal-content fadeIn">
+                                    <div class="modal-header modal-header-success">
+                                        <asp:LinkButton runat="server" ID="LinkButton3" CssClass="close" data-dismiss="modal" ForeColor="White"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></asp:LinkButton>
+                                        <h2 class="modal-title"><i class="fa fa-bar-chart-o modal-icon"></i>
+                                            <asp:Label ID="lblTituloModalNutra" runat="server" Text="- Tabela de Nutracêuticos -"></asp:Label>
+                                        </h2>
+                                        <br>
+                                        <div class="form-group">
+                                            <div class="input-group m-b">
+                                                <span class="input-group-addon"><i class="fas fa-dog fa-flip-horizontal"></i><i class="fas fa-cat"></i></span>
+                                                <%--<asp:DropDownList ID="ddlEspecie" class="form-control" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlEspecie_SelectedIndexChanged">
+                                                </asp:DropDownList>--%>
+                                                <label class="btn btn-default btn-block">
+                                                    <asp:RadioButtonList ID="rblEspecie" CssClass="input-group-text" runat="server" OnSelectedIndexChanged="rblEspecie_SelectedIndexChanged" AutoPostBack="true" RepeatColumns="2" RepeatDirection="Horizontal" Width="100%">
+                                                    </asp:RadioButtonList>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body" id="content-informacoes-nutra">
+                                        <asp:Repeater ID="rptListNutra" runat="server" OnItemDataBound="rptListNutra_ItemDataBound">
+                                            <HeaderTemplate>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 37%" class="text-left">
+                                                                <asp:Label ID="Label8" runat="server" Text="Nutracêutico"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label2" runat="server" Text="Mínima"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label3" runat="server" Text="Unidade"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label4" runat="server" Text="Máxima"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label5" runat="server" Text="Unidade"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label6" runat="server" Text="Interv&nbsp;1"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 8%" class="text-center">
+                                                                <asp:Label ID="Label7" runat="server" Text="Interv&nbsp;2"></asp:Label>
+                                                            </th>
+                                                            <th style="width: 15%" class="text-center">
+                                                                <asp:Label ID="Label1" runat="server" Text="Observações"></asp:Label>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="lblNutraceutico" runat="server" Text='<%# Eval("Nutriente") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <asp:Label ID="lblDoseMinima" runat="server" Text='<%# Eval("DoseMin") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <asp:Label ID="lblUnDoseMin" runat="server" Text='<%# Eval("UnidadeMin") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <asp:Label ID="lblDoseMaxima" runat="server" Text='<%# Eval("DoseMax") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <asp:Label ID="lblUnDoseMaxima" runat="server" Text='<%# Eval("UnidadeMax") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <asp:Label ID="lblIntervalo1" runat="server" Text='<%# Eval("TpPrescr1") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <asp:Label ID="lblIntervalo2" runat="server" Text='<%# Eval("TpPrescr2") %>'></asp:Label>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <asp:Label ID="lblObs" runat="server" Text='<%# Eval("Obs") %>'></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </ItemTemplate>
+                                            <FooterTemplate>
+                                                </tbody>
+                                           </table>
+                                            </FooterTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <asp:LinkButton ID="btnModalAlimFechar" runat="server" CssClass="btn btn-default" data-dismiss="modal" OnClick="btnModalAlimFechar_Click"> <i class='fas fa-door-open'></i> Fechar </asp:LinkButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <ajaxToolkit:ModalPopupExtender ID="modalNutra" runat="server"
+                                PopupControlID="modalNutraceuticos" BackgroundCssClass="modalBackground"
+                                RepositionMode="RepositionOnWindowResize"
+                                TargetControlID="lblModalNutra">
+                            </ajaxToolkit:ModalPopupExtender>
+                            <asp:Label ID="lblModalNutra" runat="server" Text=""></asp:Label>
+                            <!-- Fim Modal Tabela Nutracêuticos -->
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <div id="page-wrapper" class="gray-bg dashbard-1">
+                        <!-- page content -->
+                        <div class="right_col" role="main">
+                            <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <!-- /page content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

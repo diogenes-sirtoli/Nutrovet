@@ -1,0 +1,12 @@
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\DCL.dll.config
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\DCL.dll
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\DCL.pdb
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\EntityFramework.dll
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\EntityFramework.SqlServer.dll
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\EntityFramework.xml
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\bin\EntityFramework.SqlServer.xml
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\obj\Debug\DCL.csproj.AssemblyReference.cache
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\obj\Debug\DCL.csproj.CoreCompileInputs.cache
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\obj\Debug\DCL.csproj.Up2Date
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\obj\Debug\DCL.dll
+D:\Meus Documentos\Programacao\Web\Nutrovet\Aplicacao\Sistema\Versao3.0\AppContext\DCL\obj\Debug\DCL.pdb

@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Nutrovet" Class="NutrovetDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sicorp-01\sqlexpress;Initial Catalog=Nutrovet;Integrated Security=True" SettingsObjectName="DCL.Properties.Settings" SettingsPropertyName="NutrovetConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AcessosAuxFuncoes" Member="AcessosAuxFuncoes">
+    <Type Name="AcessosAuxFuncoe">
+      <Column Name="IdAcFunc" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Funcao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosAuxFuncoe_AcessosFuncoesTela" Member="AcessosFuncoesTelas" ThisKey="IdAcFunc" OtherKey="IdAcFunc" Type="AcessosFuncoesTela" />
+      <Association Name="AcessosAuxFuncoe_Acesso" Member="Acessos" ThisKey="IdAcFunc" OtherKey="IdAcFunc" Type="Acesso" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcessosAuxTelas" Member="AcessosAuxTelas">
+    <Type Name="AcessosAuxTela">
+      <Column Name="IdTela" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodTela" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Telas" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosAuxTela_AcessosFuncoesTela" Member="AcessosFuncoesTelas" ThisKey="IdTela" OtherKey="IdTela" Type="AcessosFuncoesTela" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcessosFuncoesTelas" Member="AcessosFuncoesTelas">
+    <Type Name="AcessosFuncoesTela">
+      <Column Name="IdFuncTela" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAcFunc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTela" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosAuxFuncoe_AcessosFuncoesTela" Member="AcessosAuxFuncoe" ThisKey="IdAcFunc" OtherKey="IdAcFunc" Type="AcessosAuxFuncoe" IsForeignKey="true" />
+      <Association Name="AcessosAuxTela_AcessosFuncoesTela" Member="AcessosAuxTela" ThisKey="IdTela" OtherKey="IdTela" Type="AcessosAuxTela" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlimentosAuxGrupos" Member="AlimentosAuxGrupos">
+    <Type Name="AlimentosAuxGrupo">
+      <Column Name="IdGrupo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GrupoAlimento" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AlimentosAuxGrupo_Alimentos" Member="Alimentos" ThisKey="IdGrupo" OtherKey="IdGrupo" Type="Alimentos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AnimaisAuxEspecies" Member="AnimaisAuxEspecies">
+    <Type Name="AnimaisAuxEspecy">
+      <Column Name="IdEspecie" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Especie" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AnimaisAuxEspecy_AnimaisAuxRaca" Member="AnimaisAuxRacas" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="AnimaisAuxRaca" />
+      <Association Name="AnimaisAuxEspecy_ExigenciasNutricionai" Member="ExigenciasNutricionais" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="ExigenciasNutricionai" />
+      <Association Name="AnimaisAuxEspecy_Nutraceutico" Member="Nutraceuticos" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="Nutraceutico" />
+      <Association Name="AnimaisAuxEspecy_Dietas" Member="Dietas" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="Dietas" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlimentoNutrientes" Member="AlimentoNutrientes">
+    <Type Name="AlimentoNutriente">
+      <Column Name="IdAlimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAlimNutr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdNutr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="IdUnidade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Nutriente_AlimentoNutriente" Member="Nutriente" ThisKey="IdNutr" OtherKey="IdNutr" Type="Nutriente" IsForeignKey="true" />
+      <Association Name="Alimentos_AlimentoNutriente" Member="Alimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="Alimentos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AnimaisAuxRacas" Member="AnimaisAuxRacas">
+    <Type Name="AnimaisAuxRaca">
+      <Column Name="IdEspecie" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdRaca" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Raca" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IdadeAdulta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CrescInicial" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CrescFinal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AnimaisAuxRaca_Animai" Member="Animais" ThisKey="IdRaca" OtherKey="IdRaca" Type="Animai" />
+      <Association Name="AnimaisAuxEspecy_AnimaisAuxRaca" Member="AnimaisAuxEspecy" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="AnimaisAuxEspecy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExigenciasNutrAuxIndicacoes" Member="ExigenciasNutrAuxIndicacoes">
+    <Type Name="ExigenciasNutrAuxIndicacoe">
+      <Column Name="IdIndic" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Indicacao" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="ExigenciasNutrAuxIndicacoe_ExigenciasNutricionai" Member="ExigenciasNutricionais" ThisKey="IdIndic" OtherKey="IdIndic" Type="ExigenciasNutricionai" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExigenciasNutricionais" Member="ExigenciasNutricionais">
+    <Type Name="ExigenciasNutricionai">
+      <Column Name="IdExigNutr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTabNutr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEspecie" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdIndic" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTpValor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdNutr1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUnidade1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Proporcao1" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Valor1" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdNutr2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdUnidade2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Proporcao2" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Valor2" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AnimaisAuxEspecy_ExigenciasNutricionai" Member="AnimaisAuxEspecy" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="AnimaisAuxEspecy" IsForeignKey="true" />
+      <Association Name="ExigenciasNutrAuxIndicacoe_ExigenciasNutricionai" Member="ExigenciasNutrAuxIndicacoe" ThisKey="IdIndic" OtherKey="IdIndic" Type="ExigenciasNutrAuxIndicacoe" IsForeignKey="true" />
+      <Association Name="Nutriente_ExigenciasNutricionai" Member="Nutriente" ThisKey="IdNutr1" OtherKey="IdNutr" Type="Nutriente" IsForeignKey="true" />
+      <Association Name="Nutriente_ExigenciasNutricionai1" Member="Nutriente1" ThisKey="IdNutr2" OtherKey="IdNutr" Type="Nutriente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Acessos" Member="Acessos">
+    <Type Name="Acesso">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdAcFunc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inserir" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Alterar" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Excluir" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Consultar" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AcoesEspeciais" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Relatorios" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SuperUser" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TermoUso" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosAuxFuncoe_Acesso" Member="AcessosAuxFuncoe" ThisKey="IdAcFunc" OtherKey="IdAcFunc" Type="AcessosAuxFuncoe" IsForeignKey="true" />
+      <Association Name="Pessoa_Acesso" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PortalContato" Member="PortalContatos">
+    <Type Name="PortalContato">
+      <Column Name="IdContato" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" />
+      <Column Name="NomeContato" Type="System.String" DbType="VarChar(250)" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="EmailContato" Type="System.String" DbType="VarChar(250)" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="Assunto" Type="System.String" DbType="VarChar(250)" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="Mensagem" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="DataEnvio" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="MsgSituacao" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="DataResposta" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="Observacoes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" UpdateCheck="Always" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nutraceuticos" Member="Nutraceuticos">
+    <Type Name="Nutraceutico">
+      <Column Name="IdNutrac" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdEspecie" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNutr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DoseMin" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdUnidMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoseMax" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdUnidMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPrescr1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPrescr2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Obs" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Nutraceutico_NutraceuticosDieta" Member="NutraceuticosDietas" ThisKey="IdNutrac" OtherKey="IdNutrac" Type="NutraceuticosDieta" />
+      <Association Name="AnimaisAuxEspecy_Nutraceutico" Member="AnimaisAuxEspecy" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="AnimaisAuxEspecy" IsForeignKey="true" />
+      <Association Name="Nutriente_Nutraceutico" Member="Nutriente" ThisKey="IdNutr" OtherKey="IdNutr" Type="Nutriente" IsForeignKey="true" />
+      <Association Name="PrescricaoAuxTipo_Nutraceutico" Member="PrescricaoAuxTipo" ThisKey="IdPrescr1" OtherKey="IdPrescr" Type="PrescricaoAuxTipo" IsForeignKey="true" />
+      <Association Name="PrescricaoAuxTipo_Nutraceutico1" Member="PrescricaoAuxTipo1" ThisKey="IdPrescr2" OtherKey="IdPrescr" Type="PrescricaoAuxTipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nutrientes" Member="Nutrientes">
+    <Type Name="Nutriente">
+      <Column Name="IdGrupo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNutr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nutriente" Member="Nutriente1" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUnidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ValMin" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="ValMax" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="ListarCardapio" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ListarEmAlim" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Nutriente_AlimentoNutriente" Member="AlimentoNutrientes" ThisKey="IdNutr" OtherKey="IdNutr" Type="AlimentoNutriente" />
+      <Association Name="Nutriente_ExigenciasNutricionai" Member="ExigenciasNutricionais" ThisKey="IdNutr" OtherKey="IdNutr1" Type="ExigenciasNutricionai" />
+      <Association Name="Nutriente_ExigenciasNutricionai1" Member="ExigenciasNutricionais1" ThisKey="IdNutr" OtherKey="IdNutr2" Type="ExigenciasNutricionai" />
+      <Association Name="Nutriente_Nutraceutico" Member="Nutraceuticos" ThisKey="IdNutr" OtherKey="IdNutr" Type="Nutraceutico" />
+      <Association Name="Nutriente_ReceituarioNutriente" Member="ReceituarioNutrientes" ThisKey="IdNutr" OtherKey="IdNutr" Type="ReceituarioNutriente" />
+      <Association Name="NutrientesAuxGrupo_Nutriente" Member="NutrientesAuxGrupo" ThisKey="IdGrupo" OtherKey="IdGrupo" Type="NutrientesAuxGrupo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NutrientesAuxGrupos" Member="NutrientesAuxGrupos">
+    <Type Name="NutrientesAuxGrupo">
+      <Column Name="IdGrupo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Grupo" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Ordem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ListarEmAlim" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="NutrientesAuxGrupo_Nutriente" Member="Nutrientes" ThisKey="IdGrupo" OtherKey="IdGrupo" Type="Nutriente" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlimentosAuxCategorias" Member="AlimentosAuxCategorias">
+    <Type Name="AlimentosAuxCategorias">
+      <Column Name="IdCateg" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AlimentosAuxCategorias_Alimentos" Member="Alimentos" ThisKey="IdCateg" OtherKey="IdCateg" Type="Alimentos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BibliotecaAuxSecoes" Member="BibliotecaAuxSecoes">
+    <Type Name="BibliotecaAuxSecoe">
+      <Column Name="IdSecao" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Secao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="BibliotecaAuxSecoe_Biblioteca" Member="Bibliotecas" ThisKey="IdSecao" OtherKey="IdSecao" Type="Biblioteca" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AnimaisPesoHistorico" Member="AnimaisPesoHistoricos">
+    <Type Name="AnimaisPesoHistorico">
+      <Column Name="IdAnimal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdHistorico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Peso" Type="System.Decimal" DbType="Decimal(10,3) NOT NULL" CanBeNull="false" />
+      <Column Name="DataHistorico" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Animai_AnimaisPesoHistorico" Member="Animai" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="Animai" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Biblioteca" Member="Bibliotecas">
+    <Type Name="Biblioteca">
+      <Column Name="IdBiblio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdSecao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NomeArq" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Autor" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Ano" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Caminho" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Ordenador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="BibliotecaAuxSecoe_Biblioteca" Member="BibliotecaAuxSecoe" ThisKey="IdSecao" OtherKey="IdSecao" Type="BibliotecaAuxSecoe" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DietasAlimentos" Member="DietasAlimentos">
+    <Type Name="DietasAlimento">
+      <Column Name="IdDieta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdDietaAlim" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAlimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTpIndicacao" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quant" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Dietas_DietasAlimento" Member="Dietas" Storage="_Dieta" ThisKey="IdDieta" OtherKey="IdDieta" Type="Dietas" IsForeignKey="true" />
+      <Association Name="Alimentos_DietasAlimento" Member="Alimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="Alimentos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CardapiosAlimentos" Member="CardapiosAlimentos">
+    <Type Name="CardapiosAlimento">
+      <Column Name="IdCardapio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCardapAlim" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAlimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quant" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Alimentos_CardapiosAlimento" Member="Alimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="Alimentos" IsForeignKey="true" />
+      <Association Name="Cardapio_CardapiosAlimento" Member="Cardapio" ThisKey="IdCardapio" OtherKey="IdCardapio" Type="Cardapio" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PessoasDocumentos" Member="PessoasDocumentos">
+    <Type Name="PessoasDocumento">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ComprovanteAnexou" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ComprovantePath" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="ComprovanteHomologado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ComprovanteDtHomolog" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ComprovanteHomologador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Pessoa_PessoasDocumento" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="Pessoa_PessoasDocumento1" Member="Pessoa1" ThisKey="ComprovanteHomologador" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcessosVigenciaSituacao" Member="AcessosVigenciaSituacaos">
+    <Type Name="AcessosVigenciaSituacao">
+      <Column Name="IdVigencia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdVigSit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdSituacao" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataSituacao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosVigenciaPlano_AcessosVigenciaSituacao" Member="AcessosVigenciaPlano" ThisKey="IdVigencia" OtherKey="IdVigencia" Type="AcessosVigenciaPlano" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PessoasCartaoCredito" Member="PessoasCartaoCreditos">
+    <Type Name="PessoasCartaoCredito">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCartao" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NrCartao" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodSeg" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dBandeira" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VencimCartao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NomeCartao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="PessoasCartaoCredito_AcessosVigenciaPlano" Member="AcessosVigenciaPlanos" ThisKey="IdCartao" OtherKey="IdCartao" Type="AcessosVigenciaPlano" />
+      <Association Name="Pessoa_PessoasCartaoCredito" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tutores" Member="Tutores">
+    <Type Name="Tutore">
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTutores" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTutor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Tutore_Animai" Member="Animais" ThisKey="IdTutores" OtherKey="IdTutores" Type="Animai" />
+      <Association Name="Pessoa_Tutore" Member="Pessoa" ThisKey="IdCliente" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="Pessoa_Tutore1" Member="Pessoa1" ThisKey="IdTutor" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlimentosAuxFontes" Member="AlimentosAuxFontes">
+    <Type Name="AlimentosAuxFonte">
+      <Column Name="IdFonte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fonte" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AlimentosAuxFonte_Alimentos" Member="Alimentos" ThisKey="IdFonte" OtherKey="IdFonte" Type="Alimentos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pessoas" Member="Pessoas">
+    <Type Name="Pessoa">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTpPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="dTpEntidade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dNacionalidade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataNascimento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="RG" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CPF" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CNPJ" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Passaporte" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="DocumentosOutros" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="CRVM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Telefone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Logotipo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Assinatura" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Logradouro" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Logr_Nr" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Compl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Logr_Bairro" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Logr_CEP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Cidade" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Logr_UF" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Pais" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Senha" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Bloqueado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Pessoa_Acesso" Member="Acesso" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Acesso" />
+      <Association Name="Pessoa_PessoasDocumento" Member="PessoasDocumento" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="PessoasDocumento" Cardinality="One" />
+      <Association Name="Pessoa_PessoasDocumento1" Member="PessoasDocumentos" ThisKey="IdPessoa" OtherKey="ComprovanteHomologador" Type="PessoasDocumento" />
+      <Association Name="Pessoa_PessoasCartaoCredito" Member="PessoasCartaoCreditos" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="PessoasCartaoCredito" />
+      <Association Name="Pessoa_Tutore" Member="Tutores" ThisKey="IdPessoa" OtherKey="IdCliente" Type="Tutore" />
+      <Association Name="Pessoa_Tutore1" Member="Tutores1" ThisKey="IdPessoa" OtherKey="IdTutor" Type="Tutore" />
+      <Association Name="Pessoa_AcessosVigenciaPlano" Member="AcessosVigenciaPlanos" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="AcessosVigenciaPlano" />
+      <Association Name="Pessoa_LogsSistema" Member="LogsSistemas" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="LogsSistema" />
+      <Association Name="Pessoa_Alimentos" Member="Alimentos" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Alimentos" />
+      <Association Name="Pessoa_AlimentosAuxAlia" Member="AlimentosAuxAlias" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="AlimentosAuxAlia" />
+      <Association Name="Pessoa_Cardapio" Member="Cardapios" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Cardapio" />
+      <Association Name="Pessoa_Atendimento" Member="Atendimentos" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Atendimento" />
+      <Association Name="Pessoa_ConfigReceituario" Member="ConfigReceituario" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="ConfigReceituario" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlanosAssinaturas" Member="PlanosAssinaturas">
+    <Type Name="PlanosAssinatura">
+      <Column Name="IdPlano" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPlanoPagarMe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPlanoPagarMeTestes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dNomePlano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ValorPlano" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="dPlanoTp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dPeriodo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QtdAnimais" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="PlanosAssinatura_AcessosVigenciaPlano" Member="AcessosVigenciaPlanos" ThisKey="IdPlano" OtherKey="IdPlano" Type="AcessosVigenciaPlano" />
+    </Type>
+  </Table>
+  <Table Name="" Member="LogrPais">
+    <Type Name="LogrPais">
+      <Column Name="gentilico" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="nome_pais" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="nome_pais_int" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="sigla" Type="System.String" DbType="VarChar(20)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcessosVigenciaPlanos" Member="AcessosVigenciaPlanos">
+    <Type Name="AcessosVigenciaPlano">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdVigencia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPlano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdSubscriptionPagarMe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StatusPagarMe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DtInicial" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DtFinal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdCartao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCupom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosVigenciaPlano_AcessosVigenciaSituacao" Member="AcessosVigenciaSituacaos" ThisKey="IdVigencia" OtherKey="IdVigencia" Type="AcessosVigenciaSituacao" />
+      <Association Name="Pessoa_AcessosVigenciaPlano" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="PessoasCartaoCredito_AcessosVigenciaPlano" Member="PessoasCartaoCredito" ThisKey="IdCartao" OtherKey="IdCartao" Type="PessoasCartaoCredito" IsForeignKey="true" />
+      <Association Name="PlanosAssinatura_AcessosVigenciaPlano" Member="PlanosAssinatura" ThisKey="IdPlano" OtherKey="IdPlano" Type="PlanosAssinatura" IsForeignKey="true" />
+      <Association Name="AcessosVigenciaCupomDesconto_AcessosVigenciaPlano" Member="AcessosVigenciaCupomDesconto" ThisKey="IdCupom" OtherKey="IdCupom" Type="AcessosVigenciaCupomDesconto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcessosVigenciaCupomDesconto" Member="AcessosVigenciaCupomDescontos">
+    <Type Name="AcessosVigenciaCupomDesconto">
+      <Column Name="IdCupom" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NrCumpom" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="dPlanoTp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DtInicial" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DtFinal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="fUsado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fAcessoLiberado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Professor" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AcessosVigenciaCupomDesconto_AcessosVigenciaPlano" Member="AcessosVigenciaPlanos" ThisKey="IdCupom" OtherKey="IdCupom" Type="AcessosVigenciaPlano" />
+    </Type>
+  </Table>
+  <Table Name="" Member="LogrUFs">
+    <Type Name="LogrUF">
+      <Column Name="Nome" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sigla" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dietas" Member="Dietas">
+    <Type Name="Dietas">
+      <Column Name="IdEspecie" Type="System.Int32" DbType="Int" CanBeNull="false" />
+      <Column Name="IdDieta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dieta" Storage="_Dieta1" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Carboidrato" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Proteina" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Gordura" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Dietas_DietasAlimento" Member="DietasAlimentos" ThisKey="IdDieta" OtherKey="IdDieta" Type="DietasAlimento" />
+      <Association Name="Dietas_NutraceuticosDieta" Member="NutraceuticosDietas" ThisKey="IdDieta" OtherKey="IdDieta" Type="NutraceuticosDieta" />
+      <Association Name="Dietas_Cardapio" Member="Cardapios" ThisKey="IdDieta" OtherKey="IdDieta" Type="Cardapio" />
+      <Association Name="AnimaisAuxEspecy_Dietas" Member="AnimaisAuxEspecy" ThisKey="IdEspecie" OtherKey="IdEspecie" Type="AnimaisAuxEspecy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NutraceuticosDietas" Member="NutraceuticosDietas">
+    <Type Name="NutraceuticosDieta">
+      <Column Name="IdNutrac" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNutDie" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdDieta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Dietas_NutraceuticosDieta" Member="Dietas" ThisKey="IdDieta" OtherKey="IdDieta" Type="Dietas" IsForeignKey="true" />
+      <Association Name="Nutraceutico_NutraceuticosDieta" Member="Nutraceutico" ThisKey="IdNutrac" OtherKey="IdNutrac" Type="Nutraceutico" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PrescricaoAuxTipos" Member="PrescricaoAuxTipos">
+    <Type Name="PrescricaoAuxTipo">
+      <Column Name="IdPrescr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Prescricao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Intervalo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="PrescricaoAuxTipo_Nutraceutico" Member="Nutraceuticos" ThisKey="IdPrescr" OtherKey="IdPrescr1" Type="Nutraceutico" />
+      <Association Name="PrescricaoAuxTipo_Nutraceutico1" Member="Nutraceuticos1" ThisKey="IdPrescr" OtherKey="IdPrescr2" Type="Nutraceutico" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente" Member="ReceituarioNutrientes" ThisKey="IdPrescr" OtherKey="IdPrescr" Type="ReceituarioNutriente" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente1" Member="ReceituarioNutrientes1" ThisKey="IdPrescr" OtherKey="IdPrescrMax" Type="ReceituarioNutriente" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente2" Member="ReceituarioNutrientes2" ThisKey="IdPrescr" OtherKey="IdPrescrMin" Type="ReceituarioNutriente" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Animais" Member="Animais">
+    <Type Name="Animai">
+      <Column Name="IdTutores" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAnimal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="IdRaca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DtNascim" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="RgPet" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="PesoAtual" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="PesoIdeal" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="RecalcularNEM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Observacoes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Animai_AnimaisPesoHistorico" Member="AnimaisPesoHistoricos" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="AnimaisPesoHistorico" />
+      <Association Name="Animai_Cardapio" Member="Cardapios" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="Cardapio" />
+      <Association Name="Animai_Atendimento" Member="Atendimentos" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="Atendimento" />
+      <Association Name="AnimaisAuxRaca_Animai" Member="AnimaisAuxRaca" ThisKey="IdRaca" OtherKey="IdRaca" Type="AnimaisAuxRaca" IsForeignKey="true" />
+      <Association Name="Tutore_Animai" Member="Tutore" ThisKey="IdTutores" OtherKey="IdTutores" Type="Tutore" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogsSistema" Member="LogsSistemas">
+    <Type Name="LogsSistema">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdLog" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTabela" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdAcao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mensagem" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Justificativa" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datahora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Pessoa_LogsSistema" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alimentos" Member="Alimentos">
+    <Type Name="Alimentos">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdAlimento" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdGrupo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdFonte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCateg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NDB_No" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alimento" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Compartilhar" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fHomologado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fAlias" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DataHomol" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Alimentos_AlimentoNutriente" Member="AlimentoNutrientes" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="AlimentoNutriente" />
+      <Association Name="Alimentos_DietasAlimento" Member="DietasAlimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="DietasAlimento" />
+      <Association Name="Alimentos_CardapiosAlimento" Member="CardapiosAlimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="CardapiosAlimento" />
+      <Association Name="Alimentos_AlimentosAuxAlia" Member="AlimentosAuxAlias" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="AlimentosAuxAlia" />
+      <Association Name="AlimentosAuxCategorias_Alimentos" Member="AlimentosAuxCategorias" ThisKey="IdCateg" OtherKey="IdCateg" Type="AlimentosAuxCategorias" IsForeignKey="true" />
+      <Association Name="AlimentosAuxFonte_Alimentos" Member="AlimentosAuxFonte" ThisKey="IdFonte" OtherKey="IdFonte" Type="AlimentosAuxFonte" IsForeignKey="true" />
+      <Association Name="AlimentosAuxGrupo_Alimentos" Member="AlimentosAuxGrupo" ThisKey="IdGrupo" OtherKey="IdGrupo" Type="AlimentosAuxGrupo" IsForeignKey="true" />
+      <Association Name="Pessoa_Alimentos" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlimentosAuxAlias" Member="AlimentosAuxAlias">
+    <Type Name="AlimentosAuxAlia">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAlias" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAlimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Alimentos_AlimentosAuxAlia" Member="Alimentos" ThisKey="IdAlimento" OtherKey="IdAlimento" Type="Alimentos" IsForeignKey="true" />
+      <Association Name="Pessoa_AlimentosAuxAlia" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReceituarioNutrientes" Member="ReceituarioNutrientes">
+    <Type Name="ReceituarioNutriente">
+      <Column Name="IdReceita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNutrRec" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmReceita" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdNutr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Consta" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Falta" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="DoseMin" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdUnidMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPrescrMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoseMax" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdUnidMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPrescrMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Adequado" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Recomendado" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Sobra" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Dose" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="IdUnid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPrescr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PesoAtual" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Nutriente_ReceituarioNutriente" Member="Nutriente" ThisKey="IdNutr" OtherKey="IdNutr" Type="Nutriente" IsForeignKey="true" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente" Member="PrescricaoAuxTipo" ThisKey="IdPrescr" OtherKey="IdPrescr" Type="PrescricaoAuxTipo" IsForeignKey="true" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente1" Member="PrescricaoAuxTipo1" ThisKey="IdPrescrMax" OtherKey="IdPrescr" Type="PrescricaoAuxTipo" IsForeignKey="true" />
+      <Association Name="PrescricaoAuxTipo_ReceituarioNutriente2" Member="PrescricaoAuxTipo2" ThisKey="IdPrescrMin" OtherKey="IdPrescr" Type="PrescricaoAuxTipo" IsForeignKey="true" />
+      <Association Name="Receituario_ReceituarioNutriente" Member="Receituario" ThisKey="IdReceita" OtherKey="IdReceita" Type="Receituario" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Receituario" Member="Receituarios">
+    <Type Name="Receituario">
+      <Column Name="IdCardapio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdReceita" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dTpRec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titulo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Veiculo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="QuantVeic" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Posologia" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="VeiculoSid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="QuantVeicSid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PosologiaSid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="VeiculoTid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="QuantVeicTid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PosologiaTid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Prescricao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="InstrucoesReceita" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DataReceita" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LocalReceita" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="dTblExigNutr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuantDietas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Arquivo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NrReceita" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Receituario_ReceituarioNutriente" Member="ReceituarioNutrientes" ThisKey="IdReceita" OtherKey="IdReceita" Type="ReceituarioNutriente" />
+      <Association Name="Cardapio_Receituario" Member="Cardapio" ThisKey="IdCardapio" OtherKey="IdCardapio" Type="Cardapio" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cardapio" Member="Cardapios">
+    <Type Name="Cardapio">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAnimal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCardapio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="DtCardapio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FatorEnergia" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="NEM" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Gestante" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lactante" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LactacaoSemanas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NrFilhotes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdDieta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmCardapio" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="NrCardapio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Arquivo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IdCardCopia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Cardapio_CardapiosAlimento" Member="CardapiosAlimentos" ThisKey="IdCardapio" OtherKey="IdCardapio" Type="CardapiosAlimento" />
+      <Association Name="Cardapio_Receituario" Member="Receituarios" ThisKey="IdCardapio" OtherKey="IdCardapio" Type="Receituario" />
+      <Association Name="Cardapio_Cardapio" Member="Cardapios" ThisKey="IdCardapio" OtherKey="IdCardCopia" Type="Cardapio" />
+      <Association Name="Animai_Cardapio" Member="Animai" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="Animai" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Cardapio_Cardapio" Member="Cardapio1" ThisKey="IdCardCopia" OtherKey="IdCardapio" Type="Cardapio" IsForeignKey="true" />
+      <Association Name="Dietas_Cardapio" Member="Dietas" ThisKey="IdDieta" OtherKey="IdDieta" Type="Dietas" IsForeignKey="true" />
+      <Association Name="Pessoa_Cardapio" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Atendimento" Member="Atendimentos">
+    <Type Name="Atendimento">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAnimal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAtend" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTpAtend" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DtHrAtend" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Atendimento" Member="Atendimento1" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Atendimento_AtendimentoAuxAnexo" Member="AtendimentoAuxAnexos" ThisKey="IdAtend" OtherKey="IdAtend" Type="AtendimentoAuxAnexo" />
+      <Association Name="Animai_Atendimento" Member="Animai" ThisKey="IdAnimal" OtherKey="IdAnimal" Type="Animai" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Pessoa_Atendimento" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="AtendimentoAuxTipo_Atendimento" Member="AtendimentoAuxTipo" ThisKey="IdTpAtend" OtherKey="IdTpAtend" Type="AtendimentoAuxTipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AtendimentoAuxAnexos" Member="AtendimentoAuxAnexos">
+    <Type Name="AtendimentoAuxAnexo">
+      <Column Name="IdAtend" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdAnexo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Anexo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="AnexoNr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Atendimento_AtendimentoAuxAnexo" Member="Atendimento" ThisKey="IdAtend" OtherKey="IdAtend" Type="Atendimento" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AtendimentoAuxTipos" Member="AtendimentoAuxTipos">
+    <Type Name="AtendimentoAuxTipo">
+      <Column Name="IdTpAtend" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipoAtendimento" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="AtendimentoAuxTipo_Atendimento" Member="Atendimentos" ThisKey="IdTpAtend" OtherKey="IdTpAtend" Type="Atendimento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigReceituario" Member="ConfigReceituarios">
+    <Type Name="ConfigReceituario">
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DtIniUso" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DtIniUsoLT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NomeClinica" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Slogan" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="fLivreCabecalho" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LivreCabecalho" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="fLivreRodape" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LivreRodape" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Site" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Logotipo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Assinatura" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CRMV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CrmvUf" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Telefone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Logradouro" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Logr_Nr" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Compl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Logr_Bairro" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Logr_CEP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Cidade" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Logr_UF" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Logr_Pais" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Versao" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Pessoa_ConfigReceituario" Member="Pessoa" ThisKey="IdPessoa" OtherKey="IdPessoa" Type="Pessoa" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

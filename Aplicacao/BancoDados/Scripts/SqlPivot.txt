@@ -1,0 +1,149 @@
+
+SET QUERY_GOVERNOR_COST_LIMIT 0
+
+--Cria Tabela Virtual
+Declare @BolPub Table
+(
+	IdOpm Int, 
+	Classificacao Varchar(50), 
+	CmdNome Varchar(50), 
+	Ano Int, 
+	Jan_P Int, 
+	Jan_NP Int, 
+	Fev_P Int,
+	Fev_NP Int, 
+	Mar_P Int, 
+	Mar_NP Int, 
+	Abr_P Int,
+	Abr_NP Int, 
+	Mai_P Int, 
+	Mai_NP Int, 
+	Jun_P Int,
+	Jun_NP Int, 
+	Jul_P Int, 
+	Jul_NP Int, 
+	Ago_P Int, 
+	Ago_NP Int, 
+	Set_P Int, 
+	Set_NP Int, 
+	Out_P Int, 
+	Out_NP Int, 
+	Nov_P Int, 
+	Nov_NP Int,
+	Dez_P Int,
+	Dez_NP Int
+)
+
+
+--Insere o Pivot Publicados na Tabela Virtual
+Insert Into @BolPub (IdOpm, Classificacao, CmdNome, Ano, Jan_P, Fev_P, Mar_P, Abr_P, Mai_P, Jun_P,
+					 Jul_P, Ago_P, Set_P, Out_P, Nov_P, Dez_P)
+--Tabela Virtual Pivot
+SELECT	p.IdOpm, p.Classificacao, p.CmdNome, p.Ano, p.[1] As Jan, p.[2] As Fev, p.[3] As Mar, p.[4] As Abr, 
+		p.[5] As Mai, p.[6] As Jun, p.[7] As Jul, p.[8] As Ago, p.[9] As [Set], p.[10] As [Out], 
+		p.[11] As Nov, p.[12] As Dez
+From	(
+			SELECT	DwhOrgaosPM.IdOpm, OrgaosAuxClassificacao.Classificacao, DwhOrgaosPM.CmdNome, 
+					MONTH(AdmGerBoletins.DataPublic) AS Mes, YEAR(AdmGerBoletins.DataPublic) AS Ano, 
+					COUNT(AdmGerBoletins.IdBol) AS Total
+			FROM	OrgaosAuxClassificacao INNER JOIN
+						DwhOrgaosPM ON OrgaosAuxClassificacao.IdOrgaoClas = DwhOrgaosPM.IdOrgaoClas LEFT OUTER JOIN
+						AdmGerBoletins ON DwhOrgaosPM.IdOpm = AdmGerBoletins.IdOpm
+			WHERE	(DwhOrgaosPM.OrdCmd > 0) AND (DwhOrgaosPM.OrdUop = 0) AND (DwhOrgaosPM.OrdCia = 0) AND 
+					(DwhOrgaosPM.OrdPel = 0) AND (DwhOrgaosPM.OrdGpm = 0) AND (DwhOrgaosPM.IdAtividade <> 6) AND 
+					(DwhOrgaosPM.CmdNome not in ('CAM', 'EMBM', 'GCG', 'Scmt-G')) And 
+					(AdmGerBoletins.Publicado = 1)
+			GROUP BY	DwhOrgaosPM.IdOpm, OrgaosAuxClassificacao.Classificacao, DwhOrgaosPM.CmdNome, 
+						MONTH(AdmGerBoletins.DataPublic), YEAR(AdmGerBoletins.DataPublic)
+		) As b
+PIVOT (
+		Sum(b.Total) For b.Mes in ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])
+) AS P
+Order By P.Ano, P.Classificacao, P.CmdNome
+
+
+--Insere o Pivot na Tabela Virtual os Não Publicados que não fazem correspondência aos publicados
+Insert Into @BolPub (IdOpm, Classificacao, CmdNome, Ano, Jan_NP, Fev_NP, Mar_NP, Abr_NP, Mai_NP, Jun_NP,
+					 Jul_NP, Ago_NP, Set_NP, Out_NP, Nov_NP, Dez_NP)
+--Tabela Virtual Pivot
+SELECT	p.IdOpm, p.Classificacao, p.CmdNome, p.Ano, p.[1] As Jan, p.[2] As Fev, p.[3] As Mar, p.[4] As Abr, 
+		p.[5] As Mai, p.[6] As Jun, p.[7] As Jul, p.[8] As Ago, p.[9] As [Set], p.[10] As [Out], 
+		p.[11] As Nov, p.[12] As Dez
+From	(
+			SELECT	DwhOrgaosPM.IdOpm, OrgaosAuxClassificacao.Classificacao, DwhOrgaosPM.CmdNome, 
+					MONTH(AdmGerBoletins.DataPublic) AS Mes, YEAR(AdmGerBoletins.DataPublic) AS Ano, 
+					COUNT(AdmGerBoletins.IdBol) AS Total
+			FROM	OrgaosAuxClassificacao INNER JOIN
+						DwhOrgaosPM ON OrgaosAuxClassificacao.IdOrgaoClas = DwhOrgaosPM.IdOrgaoClas LEFT OUTER JOIN
+						AdmGerBoletins ON DwhOrgaosPM.IdOpm = AdmGerBoletins.IdOpm
+			WHERE	(DwhOrgaosPM.OrdCmd > 0) AND (DwhOrgaosPM.OrdUop = 0) AND (DwhOrgaosPM.OrdCia = 0) AND 
+					(DwhOrgaosPM.OrdPel = 0) AND (DwhOrgaosPM.OrdGpm = 0) AND (DwhOrgaosPM.IdAtividade <> 6) AND 
+					(DwhOrgaosPM.CmdNome not in ('CAM', 'EMBM', 'GCG', 'Scmt-G')) And 
+					(AdmGerBoletins.Publicado = 0)
+			GROUP BY	DwhOrgaosPM.IdOpm, OrgaosAuxClassificacao.Classificacao, DwhOrgaosPM.CmdNome, 
+						MONTH(AdmGerBoletins.DataPublic), YEAR(AdmGerBoletins.DataPublic)
+		) As b
+PIVOT (
+		Sum(b.Total) For b.Mes in ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])
+) AS P
+Where (p.IdOpm not in ( Select b.IdOpm
+						From @BolPub b))
+Order By P.Ano, P.Classificacao, P.CmdNome
+
+
+--Insere no Pivot da Tabela Virtual os Não Publicados
+Update b Set
+	Jan_NP = npub.Jan, 
+	Fev_NP = npub.Fev, 
+	Mar_NP = npub.Mar,  
+	Abr_NP = npub.Abr,  
+	Mai_NP = npub.Mai,  
+	Jun_NP = npub.Jun, 
+	Jul_NP = npub.Jul,  
+	Ago_NP = npub.Ago,  
+	Set_NP = npub.[Set],  
+	Out_NP = npub.[Out],  
+	Nov_NP = npub.Nov, 
+	Dez_NP  = npub.Dez
+From @BolPub AS b Inner Join
+	(
+		--Tabela Virtual Pivot
+		SELECT	NP.IdOpm, NP.Classificacao, NP.CmdNome, NP.Ano, NP.[1] As Jan, NP.[2] As Fev, NP.[3] As Mar, NP.[4] As Abr, 
+				NP.[5] As Mai, NP.[6] As Jun, NP.[7] As Jul, NP.[8] As Ago, NP.[9] As [Set], NP.[10] As [Out], 
+				NP.[11] As Nov, NP.[12] As Dez
+		From	(
+					SELECT	o.IdOpm, clasif.Classificacao, o.CmdNome, MONTH(bol.DataPublic) AS Mes, 
+							YEAR(bol.DataPublic) AS Ano, COUNT(bol.IdBol) AS Total
+					FROM	OrgaosAuxClassificacao AS clasif INNER JOIN
+								DwhOrgaosPM AS o ON clasif.IdOrgaoClas = o.IdOrgaoClas LEFT OUTER JOIN
+								AdmGerBoletins AS bol ON o.IdOpm = bol.IdOpm
+					WHERE	(o.OrdCmd > 0) AND (o.OrdUop = 0) AND (o.OrdCia = 0) AND (o.OrdPel = 0) AND 
+							(o.OrdGpm = 0) AND (o.IdAtividade <> 6) AND 
+							(o.CmdNome NOT IN ('CAM', 'EMBM', 'GCG', 'Scmt-G')) AND (bol.Publicado = 0)
+					GROUP BY	o.IdOpm, clasif.Classificacao, o.CmdNome, MONTH(bol.DataPublic), YEAR(bol.DataPublic)
+				) As bo
+		PIVOT (
+				Sum(bo.Total) For bo.Mes in ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])
+				) AS NP
+	) As npub On b.IdOpm = npub.IdOpm
+Where b.Ano = npub.Ano
+
+
+IF Not EXISTS (select top 1 1 from @BolPub b)
+	Begin
+		RAISERROR (N'Não há registros a serem gravados. A Operação será terminada!!!', 16, 127) WITH NOWAIT
+	End
+Else
+	Begin
+		TRUNCATE TABLE DwhBolDashBoard
+
+		Insert Into DwhBolDashBoard
+		Select	*
+		From	@BolPub b
+		Order By b.Ano, b.Classificacao, b.CmdNome
+	End;
+
+
+go
+
+

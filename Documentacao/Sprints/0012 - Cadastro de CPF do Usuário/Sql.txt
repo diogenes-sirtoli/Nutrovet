@@ -1,0 +1,15 @@
+SELECT        Acessos.IdPessoa, Pessoas.*
+FROM            Acessos INNER JOIN
+                         Pessoas ON Acessos.IdPessoa = Pessoas.IdPessoa
+WHERE        (Acessos.TermoUso = 0) and (Pessoas.Bloqueado = 0)
+
+borgesvet@ufla.br / akamine.vet@outlook.com
+123456
+
+dTpEntidade
+dNacionalidade
+CPF
+CNPJ
+Passaporte
+DocumentosOutros
+Logr_CEP

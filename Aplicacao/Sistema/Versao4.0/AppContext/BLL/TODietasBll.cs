@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace BLL
+{
+    public class TODietasBll
+    {
+        public int IdEspecie { get; set; }
+        public string Especie { get; set; }
+        public int IdDieta { get; set; }
+        public string Dieta { get; set; }
+        public decimal? Carboidrato { get; set; }
+        public decimal? Proteina { get; set; }
+        public decimal? Gordura { get; set; }
+        public decimal? Total { get; set; }
+
+        public bool? Ativo { get; set; }
+        public int? IdOperador { get; set; }
+        public string IP { get; set; }
+        public DateTime? DataCadastro { get; set; }
+    }
+}

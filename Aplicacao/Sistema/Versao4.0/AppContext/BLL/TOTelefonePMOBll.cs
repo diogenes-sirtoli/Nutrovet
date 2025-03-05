@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace BLL
+{
+    public class TOTelefonePMOBll
+    {
+        public int Id { get; set; }
+        public string Ddi { get; set; }
+        public string Ddd { get; set; }
+        public string Number { get; set; }
+        public DateTime? DateCreated { get; set; }
+        public DateTime? DateUpdated { get; set; }
+        public string ErrorMessage { get; set; }
+    }
+}

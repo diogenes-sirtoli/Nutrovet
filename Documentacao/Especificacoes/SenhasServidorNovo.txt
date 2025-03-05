@@ -1,0 +1,15 @@
+Senhas Servidor Novo
+
+
+   - FortiClient
+	* User:	rafael.lobo
+	* Pass:	93khsuj8
+
+   - Server
+	* User:	Administrador
+	* Pass:	!qazXsw2#edc
+	* IP:	10.11.102.10
+
+   - SimplesVet
+	* User:	iedo.brito@gmail.com
+	* Pass:	Mar1Ped2
